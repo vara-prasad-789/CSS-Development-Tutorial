@@ -1,3 +1,8 @@
+#bgimg1{background-image: url("paper.gif");
+	width: 150px;
+	height:150px;
+}
+#bgimg2{background-image: url("paper.gif");}
 #img1{height: 200px;}
 #p1{
 	background-color: tomato;
