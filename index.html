@@ -12,12 +12,22 @@
 
 </head>
 <body>
+
 <p id="p1">Selectors</p>
-<img src="IMAGES/selectors.png" id="img1">
+	<p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+	<p>We can divide CSS selectors into five categories:</p>
+	<ul>
+		<li>Simple selectors (select elements based on name, id, class)</li>
+		<li><a href="https://www.w3schools.com/css/css_combinators.asp">Combinator selectors</a> (select elements based on a specific relationship between them)</li>
+		<li><a href="https://www.w3schools.com/css/css_pseudo_classes.asp">Pseudo-class selectors</a> (select elements based on a certain state)</li>
+		<li><a href="https://www.w3schools.com/css/css_pseudo_elements.asp">Pseudo-elements selectors</a> (select and style a part of an element)</li>
+		<li><a href="https://www.w3schools.com/css/css_attribute_selectors.asp">Attribute selectors</a> (select elements based on an attribute or attribute value)</li>
+	</ul>
+<img src="IMAGES/selectors.png" id="img1"><hr><br>
 <p id="p2">Comments</p>
 <p>/*&emsp;------------<br>
 &emsp; ------------<br>
-&emsp; ------------ */</p>
+&emsp; ------------ */</p><hr><br>
 <p id="p3">Color Values</p>
 <p id="p31">Color as Tomato :<br>
 &emsp; rgb(255,99,71)<br>
@@ -26,7 +36,7 @@
 </p>
 <p id="p32">Color as Tomato but 50% Transparent :<br> &emsp; rgba(255, 99, 71, 0.5)<br>
 &emsp; hsla(9, 100%, 64%, 0.5)
-</p>
+</p><hr><br>
 <p>OPACITY : <br>
 The opacity property specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0. The lower value, the more transparent:</p>
 <p id="p4">BACKGROUND COLOR</p>
@@ -46,8 +56,38 @@ background-color<br>
 background-image<br>
 background-repeat<br>
 background-attachment<br>
-background-position</p>
-
+background-position</p><hr><br>
+	<h4>CSS background-color property</h4>
+	<p>The background-color property specifies the background color of an element.</p>
+	<h5>Opacity / Transparency</h5>
+	<p>The opacity property specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0. The lower value, the more transparent</p>
+	<p>opacity&nbsp; 1<br>
+	opacity&nbsp; 0.6<br>
+	opacity&nbsp; 0.3<br>
+		opacity&nbsp; 0.1</p>
+	<h6>Transparency using RGBA</h6>
+	<code>div {
+  		background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity */
+		}<code><hr><br>
+<h4>CSS Background Image</h4>
+<p>The background-image property specifies an image to use as the background of an element.<br>
+By default, the image is repeated so it covers the entire element.</p>
+		<div id="bgimg1"></div>
+		<p>Note: When using a background image, use an image that does not disturb the text.</p>
+<p id="bgimg2">This paragraph has an image as the background!</p>
+		<h4>CSS Background Image Repeat</h4>
+		<p>If the image above is repeated only horizontally (background-repeat: repeat-x;), the background will look better</p>
+		<p>Tip: To repeat an image vertically, set background-repeat: repeat-y;</p>
+		<p>to repeat an image only once,set background-repeat: no-repeat</p><hr><br>
+		<h4>CSS background-position</h4>
+		<p>The background-position property is used to specify the position of the background image.</p>
+		<p>example:    background-position: right top;</p>
+		<h4>CSS background-attachment</h4>
+		<p>The background-attachment property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page):</p>
+		<p>Example : background-attachment: fixed;</p>
+		<p>Example : background-attachment: scroll;</p>
+		<h4>CSS Background Shorthand</h4>
+		<code>background: #ffffff url("img_tree.png") no-repeat right top;</code><hr><br>
 <h1>The background-clip Property</h1>
 
 <p>The background-clip property defines how far the background should extend within an element.</p>
@@ -55,35 +95,35 @@ background-position</p>
 <p>background-clip: border-box (this is default):</p>
 <div id="example1">
   <p>The background extends behind the border.</p>
-</div>
+</div><br>
 
 <p>background-clip: padding-box:</p>
 <div id="example2">
   <p>The background extends to the inside edge of the border.</p>
-</div>
+</div><br>
 
 <p>background-clip: content-box:</p>
 <div id="example3">
   <p>The background extends to the edge of the content box.</p>
-</div>
+</div><br>
 <br>
-<div id="grad1" class="line"></div>
-<div id="grad2" class="line"></div>
-<div id="grad3" class="line"></div>
-<div id="grad4" class="line"></div>
-<div id="grad5" class="line"></div>
-<div id="grad6" class="line"></div>
-<div id="grad7" class="line"></div>
-<div id="grad8" class="line"></div>
-<div id="grad9" class="line"></div>
-<div id="grad10" class="line"></div>
-<div id="grad11" class="line"></div>
+<div id="grad1" class="line">Linear Gradient - Top to Bottom</div>
+<div id="grad2" class="line">Linear Gradient - Left to Right</div>
+<div id="grad3" class="line">Linear Gradient - Diagonal(top left to bottom right)</div>
+<div id="grad4" class="line">linear-gradient(0deg, red, yellow)</div>
+<div id="grad5" class="line">linear-gradient(90deg, red, yellow)</div>
+<div id="grad6" class="line">linear-gradient(180deg, red, yellow)</div>
+<div id="grad7" class="line">linear-gradient(-90deg, red, yellow)</div>
+<div id="grad8" class="line">linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); Rainbow Background</div>
+<div id="grad9" class="line">radial-gradient(red, yellow, green)</div>
+<div id="grad10" class="line">radial-gradient(red 5%, yellow 15%, green 60%)</div>
+<div id="grad11" class="line">radial-gradient(circle, red, yellow, green)</div>
 <div id="grad12" class="line"></div>
 <div id="grad13" class="line"></div>
 <div id="grad14" class="line"></div>
 <div id="grad15" class="line"></div>
 <div id="grad16" class="line"></div>
-
+<hr><br>
 <h2>background-origin: content-box, padding-box:</h2>
 <div id="example11">
   <h2>Hello World</h2>
