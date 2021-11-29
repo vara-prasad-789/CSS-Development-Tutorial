@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS Reference</title>
+	<link rel="stylesheet" type="text/css" href="CSSReference.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Autowide|Sofia|Trirong&effect=fire|neon|outline|emboss|shadow-multiple">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Ubuntu|Lora|Abril+Fatface|Poppins|Fauna+One|Cinzel|Fjalla+One|Libre+Baskerville|Space+Mono|Muli|Spectral|Rubik|Oswald|Noto+Sans">
+  <script src="https://kit.fontawesome.com/d45632cfce.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+<p id="p1">Selectors</p>
+<img src="IMAGES/selectors.png" id="img1">
+<p id="p2">Comments</p>
+<p>/*&emsp;------------<br>
+&emsp; ------------<br>
+&emsp; ------------ */</p>
+<p id="p3">Color Values</p>
+<p id="p31">Color as Tomato :<br>
+&emsp; rgb(255,99,71)<br>
+&emsp; #ff6347<br>
+&emsp; hsl(9,100%,64%)
+</p>
+<p id="p32">Color as Tomato but 50% Transparent :<br> &emsp; rgba(255, 99, 71, 0.5)<br>
+&emsp; hsla(9, 100%, 64%, 0.5)
+</p>
+<p>OPACITY : <br>
+The opacity property specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0. The lower value, the more transparent:</p>
+<p id="p4">BACKGROUND COLOR</p>
+<p id="p5">BACKGROUND COLOR</p>
+<p id="p6">BACKGROUND COLOR</p>
+<p id="p7">BACKGROUND COLOR</p>
+<p>When using the opacity property to add transparency to the background of an element, all of its child elements inherit the same transparency. This can make the text inside a fully transparent element hard to read.</p><hr>
+
+<p id="8">By default, the background-image property repeats an image both horizontally and vertically.<br><br>
+If the image above is repeated only horizontally (background-repeat: repeat-x;)<br>
+To repeat an image vertically, set background-repeat: repeat-y;<br>
+ackground-repeat: no-repeat,Showing the background image only once
+</p><br>
+<p>The background-attachment property specifies whether the background image should scroll or be fixed </p><br>
+<p>When using the shorthand property the order of the property values is:<br>
+background-color<br>
+background-image<br>
+background-repeat<br>
+background-attachment<br>
+background-position</p>
+
+<h1>The background-clip Property</h1>
+
+<p>The background-clip property defines how far the background should extend within an element.</p>
+
+<p>background-clip: border-box (this is default):</p>
+<div id="example1">
+  <p>The background extends behind the border.</p>
+</div>
+
+<p>background-clip: padding-box:</p>
+<div id="example2">
+  <p>The background extends to the inside edge of the border.</p>
+</div>
+
+<p>background-clip: content-box:</p>
+<div id="example3">
+  <p>The background extends to the edge of the content box.</p>
+</div>
+<br>
+<div id="grad1" class="line"></div>
+<div id="grad2" class="line"></div>
+<div id="grad3" class="line"></div>
+<div id="grad4" class="line"></div>
+<div id="grad5" class="line"></div>
+<div id="grad6" class="line"></div>
+<div id="grad7" class="line"></div>
+<div id="grad8" class="line"></div>
+<div id="grad9" class="line"></div>
+<div id="grad10" class="line"></div>
+<div id="grad11" class="line"></div>
+<div id="grad12" class="line"></div>
+<div id="grad13" class="line"></div>
+<div id="grad14" class="line"></div>
+<div id="grad15" class="line"></div>
+<div id="grad16" class="line"></div>
+
+<h2>background-origin: content-box, padding-box:</h2>
+<div id="example11">
+  <h2>Hello World</h2>
+  <p>The "paper.gif" background image starts from the upper left corner of the padding edge.</p>
+  <p>The "img_tree.gif" background image starts from the upper left corner of the content.</p>
+</div>
+
+<h2>background-origin: content-box, border-box:</h2>
+<div id="example22">
+  <h2>Hello World</h2>
+  <p>The "paper.gif" background image starts from the upper left corner of the border.</p>
+  <p>The "img_tree.gif" background image starts from the upper left corner of the content.</p>
+</div>
+
+<h2>background-origin: content-box, content-box:</h2>
+<div id="example33">
+  <h2>Hello World</h2>
+  <p>Both background images starts from the upper left corner of the content.</p>
+</div>
+<br>
+<a href="https://www.w3schools.com/cssref/pr_background-position.asp">BACKGROUND POSITION</a><br>
+<h2>background-size: auto (default):</h2>
+<div id="example111">
+  <h2>Hello World</h2>
+  <p>The background image is displayed in its original size.</p>
+</div>
+
+<h2>background-size: 300px 100px:</h2>
+<div id="example222">
+  <h2>Hello World</h2>
+  <p>Here, the background image is set to 300px wide and 100px high.</p>
+</div>
+<p>background-size : <br>
+	auto&emsp;-&emsp;	Default value. The background image is displayed in its original size<br>
+	cover&emsp;-&emsp;	Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges<br>
+	contain&emsp;-&emsp;	Resize the background image to make sure the image is fully visible<br>
+</p>
+
+<h2>background-size: cover:</h2>
+<div id="example1111">
+  <h2>Hello World</h2>
+  <p>The background image is resized to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges.</p>
+</div>
+
+<h2>background-size: contain:</h2>
+<div id="example11111">
+  <h2>Hello World</h2>
+  <p>The background image is resized to make sure the image is fully visible.</p>
+</div>
+<h2>background-size: contain, cover:</h2>
+<div id="example111111">
+  <h2>Hello World</h2>
+  <p>Here we have two background images. We specify the size of the first background image with "contain", and the second background-image with "cover".</p>
+</div>
+
+<h2>background-repeat: space</h2>
+<p>Here, the background-image is repeated as much as possible without clipping. The first and last images are pinned to either side of the element, and whitespace is distributed evenly between the images.</p>
+<div id="example2222">
+  <h3>Hello World!</h3>
+</div>
+
+<h2>background-repeat: round</h2>
+<p>Here, the background-image is repeated and squished or stretched, to fill the space (no gaps):</p>
+<div id="example333">
+  <h3>Hello World!</h3>
+</div>
+<p style="font-weight: bolder;">Border</p>
+<p class="dotted">A dotted border.</p>
+<p class="dashed">A dashed border.</p>
+<p class="solid">A solid border.</p>
+<p class="double">A double border.</p>
+<p class="groove">A groove border.</p>
+<p class="ridge">A ridge border.</p>
+<p class="inset">An inset border.</p>
+<p class="outset">An outset border.</p>
+<p class="none">No border.</p>
+<p class="hidden">A hidden border.</p>
+<p class="mix">A mixed border.</p>
+<p style="font-weight: bolder;">BORDER WIDTH</p>
+<p class="one">Some Text</p>
+<p class="two">Some Text</p><br>
+<p class="normal">Normal border</p>
+<p class="round1">Round border</p>
+<p class="round2">Rounder border</p>
+<p class="round3">Roundest border</p><hr>
+<p>The CSS margin properties are used to create space around elements, outside of any defined borders.</p>
+<div id="div1">
+<p class="ex1">This paragraph has an inherited left margin (from the div element).</p>
+</div>
+<div id="div11">
+<p class="ex1">This paragraph has an inherited left margin (from the div element).</p>
+</div>
+<div id="div2">This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px.</div><hr>
+<p>In this example the h1 element has a bottom margin of 50px and the h2 element has a top margin of 20px. So, the vertical margin between h1 and h2 should have been 70px (50px + 20px). However, due to margin collapse, the actual margin ends up being 50px.</p>
+<h1 id="h11">Heading 1</h1>
+<h2 id="h22">Heading 2</h2>
+<h2>PADDING</h2>
+<p>The CSS padding properties are used to generate space around an element's content, inside of any defined borders.</p>
+<div id="div33">This div element has a top padding of 50px, a right padding of 30px, a bottom padding of 50px, and a left padding of 80px.</div>
+<h2>Padding and element width</h2>
+<p>So, if an element has a specified width, the padding added to that element will be added to the total width of the element. This is often an undesirable result.</p>
+
+<div class="ex1">This div is 300px wide.</div>
+<br>
+
+<div class="ex2">The width of this div is 350px, even though it is defined as 300px in the CSS.</div>
+<p>To keep the width at 300px, no matter the amount of padding, you can use the box-sizing property. This causes the element to maintain its width; if you increase the padding, the available content space will decrease.</p>
+<h2>Padding and element width - with box-sizing</h2>
+
+<div class="ex11">This div is 300px wide.</div>
+<br>
+
+<div class="ex21">The width of this div remains at 300px, in spite of the 50px of total left and right padding, because of the box-sizing: border-box property.
+</div>
+<p style="font-weight: bolder;">CSS Height and Width</p>
+<div id="div444">This div element has a height of 200px and a width of 50%.</div><br>
+<div id="div4441">This div element has a height of 100px and a width of 500px.</div><br>
+<div id="div4442">This div element has a height of 100px and a max-width of 500px.</div><br>
+<div id="div4443">This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.</div>
+<p style="font-weight: bolder;">An outline is a line drawn outside the element's border.</p>
+<p id="outp">This element has a 2px black border and a green outline with a width of 10px.</p>
+<p id="outex1">A 4px thick outline</p>
+<p class="outex1">A solid invert outline.</p>
+<p class="outex2">A Think ridge Pink Outline</p>
+<p style="font-weight: bolder;">The outline-offset property adds space between an outline and the edge/border of an element. The space between an element and its outline is transparent.</p>
+<p class="outex3">This paragraph has an outline 15px outside the border edge.</p>
+<p>Text Align :<br>
+the text-align property is set to "justify", each line is stretched so that every line has equal width, and the left and right margins are straight
+</p>
+<h1 id="h111">HEADING</h1>
+<h2 id="h222">HEADING</h2>
+<h3 id="h333">This is HEADING text</h3>
+<div id="txtali">In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'</div>
+<p>TEXT DIRECTION :</p>
+<p class="txtdir">This is right-to-left text direction.</p>
+<h2>vertical-align: baseline (default):</h2>
+<p>An <img class="a" src="sqpurple.gif" width="9" height="9"> image with a default alignment.</p> 
+
+<h2>vertical-align: text-top:</h2>
+<p>An <img class="b" src="sqpurple.gif" width="9" height="9"> image with a text-top alignment.</p> 
+
+<h2>vertical-align: text-bottom:</h2>
+<p>An <img class="c" src="sqpurple.gif" width="9" height="9"> image with a text-bottom alignment.</p>
+
+<h2>vertical-align: sub:</h2>
+<p>An <img class="d" src="sqpurple.gif" width="9" height="9"> image with a sub alignment.</p> 
+
+<h2>vertical-align: sup:</h2>
+<p>An <img class="e" src="sqpurple.gif" width="9" height="9"> image with a super alignment.</p>
+<p>The text-transform property is used to specify uppercase and lowercase letters in a text.</p>
+<p>The text-decoration property is used to set or remove decorations from text.</p>
+<p>The text-indent property is used to specify the indentation of the first line of a text.(starting point of text)
+</p>
+<p id="txtind">In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+<h1 id="ls1">This is Heading 1</h1>
+<h2 id="ls2">This is Heading 2</h2>
+<p>Line Spacing :</p>
+<p class="small">
+This is a paragraph with a smaller line-height.<br>
+This is a paragraph with a smaller line-height.<br>
+</p>
+
+<p class="big">
+This is a paragraph with a bigger line-height.<br>
+This is a paragraph with a bigger line-height.<br>
+</p>
+<p>Word Spacing :</p>
+<h1 id="ws1">This is heading 1</h1>
+<h2 id="ws2">This is heading 2</h2>
+<p style="font-weight: bolder;">White Space :</p>
+<p>The white-space property specifies how white-space inside an element is handled.
+<br>
+This example demonstrates how to disable text wrapping inside an element</p>
+<p class="bold1">REMOVE BREAK IN CODE TO SEE</p>
+<p id="ws">
+This is some text. This is some text. This is some text.<br>
+This is some text. This is some text. This is some text.<br>
+This is some text. This is some text. This is some text.<br>
+This is some text. This is some text.</p>
+
+<h3>Text Shadow :</h3>
+<p>The text-shadow property adds shadow to text.
+<br>
+In its simplest use, you only specify the horizontal shadow (2px) and the vertical shadow (2px)</p><p>Then, add a blur effect (5px) to the shadow</p>
+
+<p id="tse">Text Shadow Effect!</p>
+<p>In CSS there are five generic font families:
+<br>
+Serif - fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance.<br>
+Sans-serif -  fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.<br>
+Monospace fonts - here all the letters have the same fixed width. They create a mechanical look. <br>
+Cursive - fonts imitate human handwriting.<br>
+Fantasy - fonts are decorative/playful fonts</p>
+<p>The font-family property should hold several font names as a "fallback" system, to ensure maximum compatibility between browsers/operating systems. Start with the font you want, and end with a generic family (to let the browser pick a similar font in the generic family, if no other fonts are available). The font names should be separated with comma.</p>
+<p class="ff">Examples of Serif</p>
+<p id="ff11" class="ff">Times New Roman</p>
+<p id="ff12" class="ff">Georgia</p>
+<p id="ff13" class="ff">Garamond</p>
+<p class="ff">Examples of Sans-serif</p>
+<p id="ff21" class="ff">Arial</p>
+<p id="ff22" class="ff">Verdana</p>
+<p id="ff23" class="ff">Helvetica</p>
+<p class="ff" id="ff24">Tahoma</p>
+<p class="ff" id="ff25">Trebuchet MS</p>
+<p class="ff">Examples of Monospace</p>
+<p id="ff31" class="ff">Courier New</p>
+<p id="ff32" class="ff">Lucida Console</p>
+<p id="ff33" class="ff">Monaco</p>
+<p class="ff">Examples of Cursive</p>
+<p id="ff41">Brush Script MT</p>
+<p id="ff42">Lucida Handwriting</p>
+<p class="ff">Examples of Fantasy</p>
+<p class="ff" id="ff51">Copperlate</p>
+<p class="ff" id="ff52">Papyrus</p>
+<br>
+<p></p>
+<br>
+<p>Web safe fonts are fonts that are universally installed across all browsers and devices.<br>
+The following list are the best web safe fonts for HTML and CSS:<br>
+
+Arial (sans-serif)<br>
+Verdana (sans-serif)<br>
+Helvetica (sans-serif)<br>
+Tahoma (sans-serif)<br>
+Trebuchet MS (sans-serif)<br>
+Times New Roman (serif)<br>
+Georgia (serif)<br>
+Garamond (serif)<br>
+Courier New (monospace)<br>
+Brush Script MT (cursive)</p>
+
+<p><b></b>Font Style :</b><br>
+	This property has three values:<br>
+normal - The text is shown normally<br>
+italic - The text is shown in italics<br>
+oblique - The text is "leaning"</p>
+<p><b>Font Weight :</b><br>
+The font-weight property specifies the weight of a font.</p>
+<p><b>Font Variant :</b><br>
+	The font-variant property specifies whether or not a text should be displayed in a small-caps font.<br>
+In a small-caps font, all lowercase letters are converted to uppercase letters. However, the converted uppercase letters appears in a smaller font size than the original uppercase letters in the text.
+</p>
+<p><b>Font Size :</b><br>
+Font Size With Pixels
+</p>
+<p id="fs1">40px</p>
+<p id="fs2">30px</p>
+<p id="fs3">14px</p>
+<p><b>Font Size With Em</b><br>
+	To allow users to resize the text (in the browser menu), many developers use em instead of pixels.
+<br>
+1em is equal to the current font size. The default text size in browsers is 16px. So, the default size of 1em is 16px.
+<br>
+The size can be calculated from pixels to em using this formula: pixels/16=em
+</p>
+<p id="fs4">2.5 em</p>
+<p id="fs5">1.875 em</p>
+<p id="fs6">0.875 em</p>
+<br>
+<p><b>Responsive Font Size</b><br>
+	The text size can be set with a vw unit, which means the "viewport width".
+<br>
+That way the text size will follow the size of the browser window:
+</p>
+
+<h1 style="font-size:10vw;">Responsive Text</h1>
+
+<p style="font-size:5vw;">Resize the browser window to see how the text size scales.</p>
+
+<p style="font-size:5vw;">Use the "vw" unit when sizing the text. 10vw will set the size to 10% of the viewport width.</p>
+
+<p>Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.</p>
+<br><hr>
+
+<p style="font-weight: bolder;">Google Fonts</p>
+<p>Just add a special style sheet link in the < head> section and then refer to the font in the CSS.</p>
+<p class="ff" id="gfsf">Sofia Font<br>
+Lorem ipsuum dolor sit amet</p>
+<p class="ff" id="gfaf">Audiowide Font<br>
+Lorem ipsum dolor sit amet</p>
+<p class="ff" id="gftf">Trirong Font<br>
+Lorem ipsum dolor sit amet</p>
+
+<p>Google have avlso enabled different font effects that you can use.
+<br>
+First add effect=effectname to the Google API, then add a special class name to the element that is going to use the special effect. The class name always starts with font-effect- and ends with the effectname.</p>
+
+<p id="gfsf" class="font-effect-fire">Sofia on Fire<br>
+Lorem ipsuum dolor sit amet</p>
+<p id="gfaf" class="font-effect-neon">Audiowide Font<br>
+Lorem ipsum dolor sit amet</p>
+<p id="gftf" class="font-effect-emboss">Trirong Font<br>
+Lorem ipsum dolor sit amet</p>
+<p class="font-effect-outline" id="gfsf">Outline Effect</p>
+<p id="gfaf" class="font-effect-shadow-multiple">Multiple Shadow Effect</p>
+
+<p style="font-weight: bolder;">Great Font Pairings</p>
+<p>Font Pairing Rules<br>
+1.Complement<br>
+It is always safe to find font pairings that complement one another.<br>
+
+A great font combination should harmonize, without being too similar or too different.<br>
+2.Use Font Superfamilies<br>
+A font superfamily is a set of fonts designed to work well together. So, using different fonts within the same superfamily is safe.<br>
+For example, the Lucida superfamily contains the following fonts: Lucida Sans, Lucida Serif, Lucida Typewriter Sans<br>
+3.Contrast is King<br>
+Two fonts that are too similar will often conflict. However, contrasts, done the right way, brings out the best in each font.
+<br>
+Example: Combining serif with sans serif is a well known combination.<br>
+A strong superfamily includes both serif and sans serif variations of the same font (e.g. Lucida and Lucida Sans).<br>
+4.Choose Only One Boss</p>
+One font should be the boss. This establishes a hierarchy for the fonts on your page. This can be achieved by varying the size, weight and color.<br>
+
+<div id="gfp1">
+  <h1 id="gfph1">Beautiful Norway</h1>
+  <p>Norway has a total area of 385,252 square kilometers and a population of 5,438,657 (December 2020). Norway is bordered by Sweden, Finland and Russia to the north-east, and the Skagerrak to the south, with Denmark on the other side.</p>
+</div>
+<div id="gfp2">
+  <h1 id="gfph2">Beautiful Norway</h1>
+  <p>Norway has a total area of 385,252 square kilometers and a population of 5,438,657 (December 2020). Norway is bordered by Sweden, Finland and Russia to the north-east, and the Skagerrak to the south, with Denmark on the other side.</p>
+</div>
+<div id="gfp3">
+  <h1 id="gfph3">Beautiful Norway</h1>
+  <p>Norway has a total area of 385,252 square kilometers and a population of 5,438,657 (December 2020). Norway is bordered by Sweden, Finland and Russia to the north-east, and the Skagerrak to the south, with Denmark on the other side.</p>
+</div>
+
+<div id="gfp4">
+  <h1 id="gfph4">Beautiful Norway</h1>
+  <p>Norway has a total area of 385,252 square kilometers and a population of 5,438,657 (December 2020).</p>
+</div>
+<div id="gfp5">
+  <h1 id="gfph5">Beautiful Norway</h1>
+  <p>Norway has a total area of 385,252 square kilometers and a population of 5,438,657 (December 2020).</p>
+</div>
+<div id="gfp6">
+  <h1 id="gfph6">Beautiful Norway</h1>
+  <p>Norway has a total area of 385,252 square kilometers and a population of 5,438,657 (December 2020).</p>
+</div>
+<div id="gfp7">
+  <h1 id="gfph7">Beautiful Norway</h1>
+  <p>Norway has a total area of 385,252 square kilometers and a population of 5,438,657 (December 2020).</p>
+</div>
+<div id="gfp8">
+  <h1 id="gfph8">Beautiful Norway</h1>
+  <p>Norway has a total area of 385,252 square kilometers and a population of 5,438,657 (December 2020).</p>
+</div>
+<div id="gfp9">
+  <h1 id="gfph9">Beautiful Norway</h1>
+  <p>Norway has a total area of 385,252 square kilometers and a population of 5,438,657 (December 2020).</p>
+</div>
+<div id="gfp10">
+  <h1 id="gfph10">Beautiful Norway</h1>
+  <p>Norway has a total area of 385,252 square kilometers and a population of 5,438,657 (December 2020).</p>
+</div>
+<div>
+  <h1>Beautiful Norway</h1>
+  <p>Norway has a total area of 385,252 square kilometers and a population of 5,438,657 (December 2020).</p>
+</div>
+
+<h3>ICONS</h3>
+<p style="font-weight: bolder;">Font Awesome Icons</p>
+<i class="fas fa-cloud"></i>
+<i class="fas fa-heart"></i>
+<i class="fas fa-car"></i>
+<i class="fas fa-file"></i>
+<i class="fas fa-bars"></i>
+<br>
+<p style="font-weight: bolder;">Bootstrap Icons</p>
+<i class="glyphicon glyphicon-cloud"></i>
+<i class="glyphicon glyphicon-remove"></i>
+<i class="glyphicon glyphicon-user"></i>
+<i class="glyphicon glyphicon-envelope"></i>
+<i class="glyphicon glyphicon-thumbs-up"></i>
+<br>
+<p style="font-weight: bolder;">Google Icons</p>
+<i class="material-icons">cloud</i>
+<i class="material-icons">favorite</i>
+<i class="material-icons">attachment</i>
+<i class="material-icons">computer</i>
+<i class="material-icons">traffic</i>
+<br>
+
+<p>CSS LINKS</p>
+<a href="https://www.w3schools.com/default.asp" class="l1">W3Schools color</a><br><br>
+<a href="https://www.w3schools.com/default.asp" class="l2">W3Schools size</a><br>
+<a href="https://www.w3schools.com/default.asp" class="l3">W3Schools BG color</a><br>
+<a href="https://www.w3schools.com/default.asp" class="l4">W3Schools Font Style</a><br>
+<a href="https://www.w3schools.com/default.asp" class="l5">W3Schools Underline</a>
+<br>
+<p>Different Types of Cursers</p>
+<p style="font-size: 25px;">Mouse over the words to change the cursor.</p>
+<span style="cursor:auto">AUTO</span><br>
+<span style="cursor:crosshair">CROSSHAIR</span><br>
+<span style="cursor:default">DEFAULT</span><br>
+<span style="cursor:e-resize">E-RESIZE</span><br>
+<span style="cursor:help">HELP</span><br>
+<span style="cursor:move">MOVE</span><br>
+<span style="cursor:n-resize">N-RESIZE</span><br>
+<span style="cursor:ne-resize">NE-RESIZE</span><br>
+<span style="cursor:nw-resize">NW-RESIZE</span><br>
+<span style="cursor:pointer">POINTER</span><br>
+<span style="cursor:progress">progress</span><br>
+<span style="cursor:s-resize">S-RESIZE</span><br>
+<span style="cursor:se-resize">SE-RESIZE</span><br>
+<span style="cursor:sw-resize">SW-RESIZE</span><br>
+<span style="cursor:text">TEXT</span><br>
+<span style="cursor:w-resize">W-RESIZE</span><br>
+<span style="cursor:wait">WAIT</span><br>
+
+<h3>LISTS STYLES</h3>
+<p>List using IMAGE</p>
+<ul class="ul1">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+<h2>list-style-position: outside (default):</h2>
+<ul class="a">
+  <li>Tea - An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub (bush) native to Asia</li>
+  <li>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its original ingredients, which were kola nuts (a source of caffeine) and coca leaves</li>
+</ul>
+
+<h2>list-style-position: inside:</h2>
+<ul class="b">
+  <li>Tea - An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub (bush) native to Asia</li>
+  <li>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its original ingredients, which were kola nuts (a source of caffeine) and coca leaves</li>
+</ul>
+<p>Remove bullets, margin and padding:</p>
+<ul class="demo">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+<br>
+<p style="font-weight: bolder;">List - Shorthand property<br>
+  the order of the property values are:<br>
+list-style-type <br>
+list-style-position <br>
+list-style-image <br>
+</p>
+<h3>Styling Lists With Colors:</h3>
+<ol class="ols">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ul class="uls">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+<h3>TABLES</h3>
+<table>
+    <thead>
+      <th>Good Morning</th>
+      <th>Good Afternoon</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Breakfast</td>
+        <td>Lunch</td>
+      </tr>
+      <tr>
+        <td>Home</td>
+        <td>Office</td>
+      </tr>
+    </tbody>
+  </table><br><br>
+<p style="font-weight: bolder;">The display property is the most important CSS property for controlling layout.<br>
+Override The Default Display Value</p>
+
+<ul id="dis">
+  <li>HTML </li>
+  <li> CSS </li>
+  <li> Javascript</li>
+</ul>
+<div id="dis1">
+<span>A display property</span><span> with a value of</span><span> "block" results in</span> <span>a line break</span><span> between the two elements.</span>
+</div>
+
+<p>Hiding an element can be done by setting the display property to none. The element will be hidden, and the page will be displayed as if the element is not there</p>
+<h1>This is a visible heading</h1>
+<h1 class="hidd">This is a hidden heading</h1>
+<p>there is an hidden element<br>
+Notice that the h1 element with display: none; does not take up any space.</p>
+
+<p>visibility:hidden; also hides an element.
+<br>
+However, the element will still take up the same space as before. The element will be hidden, but still affect the layout:</p>
+
+<h1>This is a visible heading</h1>
+<h1 class="hidd1">This is a hidden heading</h1>
+<p>Notice that the h1 element with display: none; does not take up any space.</p>
+
+<h3>Dispaly Property</h3>
+<img src="displayproperty.jpg" height="950px">
+
+
+<h2>CSS Max-width</h2>
+<p>Using max-width instead, in this situation, will improve the browser's handling of small windows. This is important when making a site usable on small devices:</p>
+
+<div class="example1">This div element has width: 500px;</div>
+<br>
+
+<div class="example2">This div element has max-width: 500px;</div>
+
+<p><strong>Tip:</strong> Drag the browser window to smaller than 500px wide, to see the difference between 
+the two divs!</p>
+
+<h2>Position Property</h2>
+<p>The position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky).</p>
+<h3>Position : Static</h3>
+<p>HTML elements are positioned static by default.
+<br>
+Static positioned elements are not affected by the top, bottom, left, and right properties.
+<br>
+An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:</p>
+<div class="static">
+  This div element has position: static;
+</div>
+<h3>Position : relative</h3>
+<p><b>An element with position: relative; is positioned relative to its normal position.</b>
+<br>
+Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.</p>
+
+<div class="relative">
+This div element has position: relative;
+</div>
+<h3>Position : Fixed</h3>
+<p>An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+<br>
+A fixed element does not leave a gap in the page where it would normally have been located.</p>
+<div class="fixed">
+This div element has position: fixed;
+</div>
+
+<h3>Positon : Absolute</h3>
+<p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+<br>
+However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.</p>
+
+<div class="relative1">This div element has position: relative;
+  <div class="absolute">This div element has position: absolute;</div>
+</div>
+
+<h3>Position : Sticky</h3>
+<p>An element with position: sticky; is positioned based on the user's scroll position.
+<br>
+A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).</p>
+
+<p>Try to <b>scroll</b> inside this frame to understand how sticky positioning works.</p>
+
+<div class="sticky">I am sticky!</div>
+
+<h3>Overlapping Elements</h3>
+<p>When elements are positioned, they can overlap other elements.
+<br>
+The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others).
+<br>
+An element can have a positive or negative stack order:</p>
+
+<h1>This is a heading<br>GO TO TOP OF THE PAGE</h1>
+<img src="w3css.gif" width="100px" height="140px" class="ovrlap">
+<p>Because the image has a z-index of -1, it will be placed behind the text.</p>
+<h1>Positioning Text In an Image</h1>
+<div class="container">
+  <img src="img_5terre_wide.jpg" alt="Cinque Terre" width="1000" height="300" id="position">
+  <div class="topleft">Top Left</div>
+  <div class="topright">Top Right</div>
+  <div class="center">Centered</div>
+  <div class="bottomleft">Bottom Left</div>
+  <div class="bottomright">Bottom Right</div>
+</div>
+<h3>The Bottom Property</h3>
+<a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss_position_bottom">Bottom Property</a>
+<p>The bottom property affects the vertical position of a positioned element. This property has no effect on non-positioned elements.
+<br>
+If position: absolute; or position: fixed; - the bottom property sets the bottom edge of an element to a unit above/below the bottom edge of its nearest positioned ancestor.<br>
+If position: relative; - the bottom property makes the element's bottom edge to move above/below its normal position.<br>
+If position: sticky; - the bottom property behaves like its position is relative when the element is inside the viewport, and like its position is fixed when it is outside.<br>
+If position: static; - the bottom property has no effect.</p>
+<h3>clip Property</h3>
+
+<p>What happens if an image is larger than its containing element?
+<br>
+The clip property lets you specify a rectangle to clip an absolutely positioned element. The rectangle is specified as four coordinates, all from the top-left corner of the element to be clipped.
+<br>
+Note: The clip property does not work if "overflow:visible".</p>
+<div>
+<img src="w3css.gif" width="100" height="140" id="clipp"></div>
+<br><br><br><br><br><br>
+<h2>The Left Property</h2>
+<p>The left property affects the horizontal position of a positioned element. This property has no effect on non-positioned elements.
+<br>
+If position: absolute; or position: fixed; - the left property sets the left edge of an element to a unit to the left of the left edge of its nearest positioned ancestor.<br>
+If position: relative; - the left property sets the left edge of an element to a unit to the left/right of its normal position.<br>
+If position: sticky; - the left property behaves like its position is relative when the element is inside the viewport, and like its position is fixed when it is outside.<br>
+If position: static; - the left property has no effect.</p>
+<a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss_position_left2">Left Property</a><hr>
+<a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss_position2">Position Property</a><hr>
+<a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss_position_right2">Right Property</a><hr>
+<a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss_position_top2">Top Property</a><hr>
+<div style="position:absolute">
+    <div id="myBox" style="border:1px solid #333333;width:100px;height:100px;">myBox</div>
+    <div style="width:100px;height:100px;position:absolute;background-color:yellow;top:20px;left:20px;z-index:0;opacity:0.5;border:1px solid #333333;">z-index 0</div>
+    <div style="width:100px;height:100px;position:absolute;background-color:yellow;top:40px;left:40px;z-index:1;opacity:0.5;border:1px solid #333333;">z-index 1</div>
+    <div style="width:100px;height:100px;position:absolute;background-color:yellow;top:60px;left:60px;z-index:2;opacity:0.5;border:1px solid #333333;">z-index 2</div>
+    <div style="width:100px;height:100px;position:absolute;background-color:yellow;top:80px;left:80px;z-index:3;opacity:0.5;border:1px solid #333333;">z-index 3</div>
+    <div style="width:100px;height:100px;position:absolute;background-color:yellow;top:100px;left:100px;z-index:4;opacity:0.5;border:1px solid #333333;">z-index 4</div>
+  </div><br><br><br><br><br><br><br><br><br><br><br><hr>
+<div style="position:absolute;">
+    <div id="myBox" style="border:1px solid #333333;width:100px;height:100px;">myBox</div>
+    <div style="width:100px;height:100px;position:absolute;background-color:yellow;top:20px;left:20px;z-index:-1;opacity:0.5;border:1px solid #333333;">z-index -1</div>
+    <div style="width:100px;height:100px;position:absolute;background-color:yellow;top:40px;left:40px;z-index:-2;opacity:0.5;border:1px solid #333333;">z-index -2</div>
+    <div style="width:100px;height:100px;position:absolute;background-color:yellow;top:60px;left:60px;z-index:-3;opacity:0.5;border:1px solid #333333;">z-index -3</div>
+    <div style="width:100px;height:100px;position:absolute;background-color:yellow;top:80px;left:80px;z-index:-4;opacity:0.5;border:1px solid #333333;">z-index -4</div>
+    <div style="width:100px;height:100px;position:absolute;background-color:yellow;top:100px;left:100px;z-index:-5;opacity:0.5;border:1px solid #333333;">z-index -5</div>
+</div><br><br><br><br><br><br><br><br><br><br>
+<h3>CSS Layout</h3>
+<p style="font-weight: bolder;">Overflow Property</p>
+<p>The CSS overflow property controls what happens to content that is too big to fit into an area.</p>
+<div id="overflowvis">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div><br><br><br><br><br>
+<div id="overflowhid">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div><br>
+<div id="overflowscr">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div><br>
+<div id="overflowauto">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div><br>
+<div id="overflowXY">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div><br>
+<p style="font-weight: bolder;">Float Property</p>
+<p>The CSS float property specifies how an element should float.</p>
+
+<p><img src="pineapple.jpg" alt="Pineapple" style="width:170px;height:170px;margin-left:15px;" id="floatright">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+<p><img src="pineapple.jpg" alt="Pineapple" style="width:170px;height:170px;margin-left:15px;" id="floatleft">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+<div class="div1" id="d1">Div 1</div>
+<div class="div1" id="d2">Div 2</div>
+<div class="div1" id="d3">Div 3</div>
+<div class="div1" id="d4">Div 4</div>
+<div class="div1" id="d5">Div 5</div>
+<div class="div1" id="d6">Div 6</div>
+<br><br>
+<h3>Clear and Clearfix Property</h3>
+<p></p>
+<h2>Without clear</h2>
+<div class="divc1">div1</div>
+<div class="divc2">div2 - Notice that div2 is after div1 in the HTML code. However, since div1 floats to the left, the text in div2 flows around div1.</div>
+<br><br>
+
+<h2>With left clear</h2>
+<div class="divc3">div3</div>
+<div class="divc4">div4 - Here, clear: left; moves div4 down below the floating div3. The value "left" clears elements floated to the left. You can also clear "right" and "both".</div>
+
+<h2>With right clear</h2>
+<div class="divc5">div5</div>
+<div class="divc6">div6 - Here, clear: right; moves div4 down below the floating div3. The value "right" clears elements floated to the right.</div><br>
+<p>If a floated element is taller than the containing element, it will "overflow" outside of its container.<br>We can then add a clearfix hack to solve this problem</p>
+<div class="clearfix" id="cf1">
+  <img class="img2" src="pineapple.jpg" alt="Pineapple" width="170" height="170" id="cfimg">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+</div>
+
+<h2>Float Examples</h2>
+
+<div class="clearfix">
+  <div class="box" style="background-color:#bbb">
+  <p>Some text inside the box.</p>
+  </div>
+  <div class="box" style="background-color:#ccc">
+  <p>Some text inside the box.</p>
+  </div>
+  <div class="box" style="background-color:#ddd">
+  <p>Some text inside the box.</p>
+  </div>
+</div>
+
+<p><h2>What is box-sizing?</h2>
+
+You can easily create three floating boxes side by side. However, when you add something that enlarges the width of each box (e.g. padding or borders), the box will break. The box-sizing property allows us to include the padding and border in the box's total width (and height), making sure that the padding stays inside of the box and that it does not break.</p>
+
+
+<div class="clearfix">
+  <div class="img-container">
+  <img src="img_5terre.jpg" alt="Italy" style="width:100%">
+  </div>
+  <div class="img-container">
+  <img src="img_forest.jpg" alt="Forest" style="width:100%">
+  </div>
+  <div class="img-container">
+  <img src="img_mountains.jpg" alt="Mountains" style="width:100%">
+  </div>
+</div>
+
+<p>However, this is not very flexible. It is ok if you can guarantee that the boxes will always have the same amount of content in them. But many times, the content is not the same. If you try the example above on a mobile phone, you will see that the second box's content will be displayed outside of the box. This is where CSS3 Flexbox comes in handy - as it can automatically stretch boxes to be as long as the longest box</p>
+
+
+<div class="flex-container">
+  <div class="box">Box 1 - This is some text to make sure that the content gets really tall. This is some text to make sure that the content gets really tall.</div>
+  <div class="box">Box 2 - My height will follow Box 1.</div>
+</div>
+
+<span class="a">Aliquam</span> <span class="a">venenatis</span>
+
+<span class="b">Aliquam</span> <span class="b">venenatis</span>
+
+<span class="c">Aliquam</span> <span class="c">venenatis</span>
+
+<p style="font-weight: bolder;">Center Align Elements</p>
+<p>To horizontally center a block element (like < div>), use margin: auto;
+<br>
+Setting the width of the element will prevent it from stretching out to the edges of its container.
+<br>
+The element will then take up the specified width, and the remaining space will be split equally between the two margins:</p>
+
+<div class="center">
+  <p>Hello World!</p>
+</div>
+<div class="cente">
+  <p>Hello World!</p>
+</div>
+<p>Center image</p>
+<img src="paris.jpg" alt="Paris" style="width:40%" class="img2">
+<p>Left and Right Align - Using position<br>
+One method for aligning elements is to use position: absolute;</p>
+<div class="right1">
+  <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+</div><br><br><br><br><br>
+<p>Left and Right Align - Using float<br>
+Another method for aligning elements is to use the float property:</p>
+<div class="right2">
+  <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+</div>
+<br><br><br><br><br>
+<div class="center1">
+  <p>I am vertically centered.</p>
+</div>
+
+<div class="center2">
+  <p>I am vertically and horizontally centered.</p>
+</div>
+
+<div class="center3">
+  <p>I am vertically and horizontally centered.</p>
+</div>
+
+<div class="center4">
+  <p>I am vertically and horizontally centered.</p>
+</div>
+<h1>Combinators</h1>
+<p>A combinator is something that explains the relationship between the selectors.<br>
+There are four different combinators in CSS:
+<br>
+descendant selector (space)<br>
+child selector (>)<br>
+adjacent sibling selector (+)<br>
+general sibling selector (~)</p>
+
+<p class="bold1">Descendent Selector</p>
+
+<div class="sel">
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+</div>
+<p class="bold1">Child Selector</p>
+
+<div class="sel1">
+  <p>Paragraph 1 in the div.</p>
+  <section><p>Paragraph 2 in the div.</p></section> <!-- not Child but Descendant -->
+  <p>Paragraph 3 in the div.</p>
+</div>
+
+<p class="bold1">Adjacent Sibling Selector (+)</p>
+
+<div class="sel3">
+  <p>Paragraph 1 in the div.</p>
+</div>
+
+<p>Paragraph 3. After a div.</p>
+
+<div class="sel3">
+  <p>Paragraph 5 in the div.</p>
+</div>
+
+<p>Paragraph 7. After a div.</p>
+<p>Paragraph 8. After a div.</p>
+
+<p class="bold1">General Sibling Selector (~)</p>
+<div>
+<p>Paragraph 1.</p>
+
+<div class="sel4">
+  <p>Paragraph 2.</p>
+</div>
+
+<p>Paragraph 3.</p>
+<code>Some code.</code>
+<p>Paragraph 4.</p>
+</div>
+
+<h2>Pseudo Classes</h2>
+<p>A pseudo-class is used to define a special state of an element.<br>
+
+For example, it can be used to:<br>
+
+Style an element when a user mouses over it
+Style visited and unvisited links differently
+Style an element when it gets focus</p>
+<h3>Mouse Over on Next Elements</h3>
+<a class="highlight" href="css_syntax.asp">CSS Syntax</a>
+<br>
+<div class="psc">Mouse Over Me (In div)</div>
+<br>
+<div class="psc1" style="font-weight: bolder;">Hover over me to show the p element
+  <p>Tada! Here I am!</p>
+</div>
+<br><br>
+<p class="bold1">The :first-child pseudo-class matches a specified element that is the first child of another element.</p>
+<div class="pscfc">
+<p>This is some text</p>
+<p>This is some text</p>
+<p>This is some text</p>
+<p>This is some text</p>
+</div>
+<p class="bold1">Match the first < i> element in all < p> elements<br>the selector matches the first < i> element in all < p> elements</p>
+<div class="pscffce">
+  <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+</div>
+
+<p class="bold1">Match all < i> elements in all first child < p> elements<br>
+the selector matches all < i> elements in < p> elements that are the first child of another element</p>
+
+<div class="pscafce">
+  <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+</div>
+<p class="bold1"> The :lang Pseudo-class</p>
+<p class="psclang">Some text <q lang="no">A quote in a paragraph</q> Some text.</p>
+<br><br>
+<p class="bold1">ALL PSEUDO CLASSES</p>
+<p class="bold1">Checked selector</p>
+<div class="checked">
+<input type="radio" checked="checked" value="male" name="gender"> Male<br>
+  <input type="radio" value="female" name="gender"> Female<br>
+  <input type="checkbox" checked="checked" value="Bike"> I have a bike<br>
+  <input type="checkbox" value="Car"> I have a car
+</div>
+<p class="bold1">Empty Selector</p>
+<p class="empty"></p>
+<p class="bold1">:first-of-type Selector<br>
+The :first-of-type selector matches every element that is the first child, of a particular type, of its parent.</p>
+<p class="bold1">Last Child Selector</p>
+<p class="bold1">Last of Type Selector</p>
+<div class="pscfto">
+  <i>Italic</i><br>
+  <b>Bold</b><br>
+  <sup>Superscript</sup><br>
+  <p>P element 1</p>
+  <p>P element 2</p>
+  <p>P element 3</p>
+  <sup>Superscript</sup><br>
+  <i>Italic</i>
+</div>
+<p class="bold1">Invalid Selector</p>
+<input type="email" value="supportEmail" class="pscinvalid">
+<p class="bold1">NOT Selector</p>
+<div class="notp">
+  <i>Italic</i><br>
+  <b>Bold</b><br>
+  <sup>Superscript</sup><br>
+  <p>P element 1</p>
+  <p>P element 2</p>
+  <sup>Superscript</sup><br>
+  <i>Italic</i>
+</div>
+<p class="bold1">AFTER selector</p>
+<p class="bold1">BEFORE Selector</p>
+<p class="bold1">First letter Selector</p>
+<p id="after">Hello World</p>
+<p class="bold1">First Line Selector</p>
+<p id="firstline">To stop the degradation of the planet's natural environment and to build a future in which humans live in harmony with nature, by; conserving the world's biological diversity</p>
+
+<p class="bold1">MArker Selector</p>
+<p>The ::marker selector selects the marker of a list item.</p>
+<ol class="pscmark">
+  <li>First</li>
+  <li>Second</li>
+  <li>Third</li>
+</ol>
+
+
+<p class="bold1">Opacity</p>
+<div class="background">
+  <div class="transbox">
+    <p>This is some text that is placed in the transparent box.</p>
+  </div>
+</div>
+
+<p class="bold1">Navigation Bar</p>
+<p>vertical Navigaton Bar</p>
+<div class="vnavb">
+<ul>
+  <li><a href="#home" class="active">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+<div style="margin-left:25%;padding:1px 16px;height:490px;">
+  <h2>Fixed Full-height Side Nav</h2>
+  <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
+  <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+  <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+</div>
+
+</div>
+
+<p class="bold1">Horizantal Navigation Bar</p>
+<div class="hnavb">
+  <ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<div style="padding:20px;margin-top:30px;background-color:#1abc9c;height:830px;">
+  <h1>Fixed Top Navigation Bar</h1>
+  <h2>Scroll this page to see the effect</h2>
+  <h2>The navigation bar will stay at the top of the page while scrolling</h2>
+
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+  <p>Some text some text some text some text..</p>
+</div>
+</div>
+<hr>
+<p class="bold1">DROPDOWN MENU</p>
+<div class="dropdown" style="float:left;">
+  <button class="dropbtn">Left</button>
+  <div class="dropdown-content" style="left:0;">
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+  </div>
+</div>
+
+<div class="dropdown" style="float:right;">
+  <button class="dropbtn">Right</button>
+  <div class="dropdown-content">
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+  </div>
+</div>
+<br><br><br>
+<p class="bold1">ATTRIBUTE SELECTORS</p>
+<a href="https://www.w3schools.com/css/css_attribute_selectors.asp"><img src="attributesel.png" height="320px"></a>
+<div class="attrsel">
+Firstname:<input type="text" name="Name" value="Peter" size="20">
+  Lastname:<input type="text" name="Name" value="Griffin" size="20">
+  <input type="button" value="Example Button">
+</div><br><br>
+<p>An image sprite is a collection of images put into a single image.<br>
+A web page with many images can take a long time to load and generates multiple server requests.<br>
+Using image sprites will reduce the number of server requests and save bandwidth.
+</p>
+<ul id="navlist">
+  <li id="home"><a href="https://www.w3schools.com/css/"></a></li>
+  <li id="prev"><a href="https://www.w3schools.com/css/css_intro.asp"></a></li>
+  <li id="next"><a href="https://www.w3schools.com/css/css_syntax.asp"></a></li>
+</ul><br><br><br>
+<h2>FORMS</h2>
+
+<div class="form">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="India">India</option>
+      <option value="usa">USA</option>
+    </select>
+  
+    <input type="submit" value="Submit">
+
+    <input type="search" name="search" placeholder="Search..">
+    <br><br>
+
+    <textarea>Some text...</textarea>
+
+  </form>
+</div>
+<br>
+<h3>Counters</h3>
+<p>CSS counters are "variables" maintained by CSS whose values can be incremented by CSS rules (to track how many times they are used).<br>Counters let you adjust the appearance of content based on its placement in the document.<br><br>
+To work with CSS counters we will use the following properties:
+<br>
+<b> counter-reset -</b> Creates or resets a counter<br>
+<b> counter-increment -</b> Increments a counter value<br>
+<b> content -</b> Inserts generated content<br>
+<b> counter() or counters() function -</b> Adds the value of a counter to an element<br>
+</p>
+<div>
+<h1>Using CSS Counters:</h1>
+<h2 class="count">HTML Tutorial</h2>
+<h2 class="count">CSS Tutorial</h2>
+<h2 class="count">JavaScript Tutorial</h2>
+</div>
+
+<p class="bold1">Nested Counters</p>
+
+<h1 class="nsch1">HTML tutorials:</h1>
+<h2 class="nsch2">HTML Tutorial</h2>
+<h2 class="nsch2">CSS Tutorial</h2>
+
+<h1 class="nsch1">Scripting tutorials:</h1>
+<h2 class="nsch2">JavaScript</h2>
+<h2 class="nsch2">VBScript</h2>
+
+<h1 class="nsch1">XML tutorials:</h1>
+<h2 class="nsch2">XML</h2>
+<h2 class="nsch2">XSL</h2>
+<p class="bold1">A counter can also be useful to make outlined lists because a new instance of a counter is automatically created in child elements. Here we use the counters() function to insert a string between different levels of nested counters:</p>
+<ol>
+  <li>item</li>
+  <li>item   
+  <ol>
+    <li>item</li>
+    <li>item</li>
+    <li>item
+    <ol>
+      <li>item</li>
+      <li>item</li>
+      <li>item</li>
+    </ol>
+    </li>
+    <li>item</li>
+  </ol>
+  </li>
+  <li>item</li>
+  <li>item</li>
+</ol>
+
+<ol>
+  <li>item</li>
+  <li>item</li>
+</ol>
+
+<h3>WEBSITE lAYOUT</h3>
+<p>A website is often divided into headers, menus, content and a footer</p>
+<p class="bold1">HEADER</p>
+<div class="header">
+  <h1>Header</h1>
+</div>
+<p class="bold1">NAVIGATON BAR</p>
+
+<div class="topnav">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+</div>
+
+<p class="bold1">Content</p>
+
+<div class="content">
+<div class="leftcolumn">
+<div class="row">
+  <div class="column">
+    <h2>Column</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+  
+  <div class="column">
+    <h2>Column</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+  
+  <div class="column">
+    <h2>Column</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+</div>
+
+<p class="bold1">Uneven Columns</p>
+
+<div class="row1">
+  <div class="column1 side">
+    <h2>Side</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+  </div>
+  
+  <div class="column1 middle">
+    <h2>Main Content</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+  
+  <div class="column1 side">
+    <h2>Side</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+  </div>
+</div>
+</div>
+
+
+<div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
+</div>
+<br>
+<p class="bold1">Footer</p>
+<div class="footer">
+  <p>Footer</p>
+</div>
+<br>
+
+<p class="bold1">Length Units</p>
+<p>There are two types of length units: <b>absolute</b> and <b>relative</b>.</p>
+<p class="bold1">Absolute Lengths</p>
+<p>CM(centimeter)</p>
+<h1 class="cm">1.5 cm</h1>
+<h2 class="cm">1 cm</h2>
+<p class="cm">0.5 cm</p>
+<p>mm(millimeter)</p>
+<h1 class="mm">15 mm</h1>
+<h2 class="mm">10 mm</h2>
+<p class="mm">5 mm</p>
+<p>in(inches)(1in = 96px = 2.54cm)</p>
+<h1 class="in">1 in</h1>
+<h2 class="in">0.6 in</h2>
+<p class="in">0.2 in</p>
+<p>px(pixels)(1px = 1/96th of 1in)</p>
+<h1 class="px">50px</h1>
+<h2 class="px">30px</h2>
+<p class="px">15px</p>
+<p>pt(points)(1pt = 1/72 of 1in)</p>
+<h1 class="pt">50pt</h1>
+<h2 class="pt">30pt</h2>
+<p class="pt">15pt</p>
+<p>pc picas (1pc = 12 pt)</p>
+<h1 class="pc">5pc</h1>
+<h2 class="pc">3pc</h2>
+<p class="pc">1.5pc</p>
+<br><br>
+
+<p class="bold1">Relative Lengths</p>
+<img src="rellen.jpg" height="350px">
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

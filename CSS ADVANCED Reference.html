@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS ADVANCED Reference</title>
+	<link rel="stylesheet" type="text/css" href="CSS ADVANCED reference.css">
+</head>
+<body>
+	<h2>CSS Rounded Corners</h2>
+	<p>With the CSS border-radius property, you can give any element "rounded corners".</p>
+	<p>Rounded corners for an element with a specified background color:</p>
+	<p id="rcorners1">Rounded corners!</p>
+	<p>Rounded corners for an element with a border:</p>
+	<p id="rcorners2">Rounded corners!</p>
+	<p>Rounded corners for an element with a background image:</p>
+	<p id="rcorners3">Rounded corners!</p>
+	<strong>Tip: The border-radius property is actually a shorthand property for the border-top-left-radius, border-top-right-radius, border-bottom-right-radius and border-bottom-left-radius properties.</strong>
+	<h5>CSS border-radius - Specify Each Corner</h5>
+	<p>Four values - border-radius: 15px 50px 30px 5px:</p>
+	<p id="rcorners11"></p>
+
+	<p>Three values - border-radius: 15px 50px 30px:</p>
+	<p id="rcorners22"></p>
+
+	<p>Two values - border-radius: 15px 50px:</p>
+	<p id="rcorners33"></p>
+
+	<p>One value - border-radius: 15px:</p>
+	<p id="rcorners44"></p>
+	<p>Elliptical border - border-radius: 50px / 15px:</p>
+	<p id="rcorners10"></p>
+
+	<p>Elliptical border - border-radius: 15px / 50px:</p>
+	<p id="rcorners21"></p>
+
+	<p>Ellipse border - border-radius: 50%:</p>
+	<p id="rcorners31"></p>
+
+	<h2>CSS Border Images</h2>
+	<p>The CSS border-image property allows you to specify an image to be used instead of the normal border around an element.<br>
+
+	The property has three parts:<br>
+
+	The image to use as the border<br>
+	Where to slice the image<br>
+	Define whether the middle sections should be repeated or stretched</p>
+	<p>Here, the middle sections of the image are repeated to create the border:</p>
+	<p id="borderimg">border-image: url(border.png) 30 round;</p>
+
+	<p>Here is the original image:</p><img src="IMAGES/border.png">
+	<p>Here, the middle sections of the image are stretched to create the border:</p>
+	<p id="borderimg1">border-image: url(border.png) 30 stretch;</p>
+	<p id="borderimg11">border-image: url(IMAGES/border.png) 50 round;</p>
+	<p id="borderimg21">border-image: url(IMAGES/border.png) 20% round;</p>
+	<p id="borderimg31">border-image: url(IMAGES/border.png) 30% round;</p>
+	<strong>Tip: The border-image property is actually a shorthand property for the border-image-source, border-image-slice, border-image-width, border-image-outset and border-image-repeat properties.</strong>
+	<p>The border-image-slice property specifies how to slice the image specified by border-image-source. The image is always sliced into nine sections: four corners, four edges and the middle.<br>
+	The "middle" part is treated as fully transparent, unless the fill keyword is set.</p>
+	<a href="https://www.w3schools.com/cssref/playit.asp?filename=playcss_border-image-slice3">border-image-slice fill</a><br>
+	<a href="https://www.w3schools.com/cssref/playit.asp?filename=playcss_border-image-slice2">border-image-slice %</a><br>
+	<a href="https://www.w3schools.com/cssref/playit.asp?filename=playcss_border-image-slice">border-image-slice number</a><br>
+	<p>border-image-width:</p>
+	<p>The border-image-width property specifies the width of the border image.</p>
+	<a href="https://www.w3schools.com/cssref/playit.asp?filename=playcss_border-image-width">border-image-width px</a><br>
+	<a href="https://www.w3schools.com/cssref/playit.asp?filename=playcss_border-image-width2">border-image-width number</a><br>
+	<a href="https://www.w3schools.com/cssref/playit.asp?filename=playcss_border-image-width3">border-image-width %</a><br>
+	<p>The border-image-outset property specifies the amount by which the border image area extends beyond the border box.</p>
+	<a href="https://www.w3schools.com/cssref/playit.asp?filename=playcss_border-image-outset">border-image-outset px</a><br>
+	<a href="https://www.w3schools.com/cssref/playit.asp?filename=playcss_border-image-outset2">border-image-outset number</a><br>
+	<p>The border-image-repeat property specifies whether the border image should be repeated, rounded or stretched.</p>
+	<a href="https://www.w3schools.com/cssref/playit.asp?filename=playcss_border-image-repeat&preval=stretch">border-image-repeat STRETCH Repeat Round Space</a><br>
+
+	<h1>CSS Multiple Backgrounds</h1>
+	<p>CSS allows you to add multiple background images for an element, through the background-image property.<br>
+	The different background images are separated by commas, and the images are stacked on top of each other, where the first image is closest to the viewer.</p>
+	<div id="example1">
+	<h1>Lorem Ipsum Dolor</h1>
+	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+	<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+	</div>
+	<h1>The background-size Property</h1>
+
+	<h2>background-size: contain:</h2>
+	<div class="div1">
+	<p>Lorem ipsum dolor sit amet.</p>
+	</div>
+
+	<h2>background-size: cover:</h2>
+	<div class="div2">
+	<p>Lorem ipsum dolor sit amet.</p>
+	</div>
+
+	<h2>No background-size defined:</h2>
+	<div class="div3">
+	<p>Lorem ipsum dolor sit amet.</p>
+	</div>
+
+	<p>Original image:</p>
+	<img src="IMAGES/img_flwr.gif" alt="Flowers" width="224" height="162">
+	<p>Define Sizes of Multiple Background Images<br>
+	The background-size property also accepts multiple values for background size (using a comma-separated list), when working with multiple backgrounds.</p>
+
+	<div id="example11">
+    <h1>Lorem Ipsum Dolor</h1>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div id="example2">
+    <div id="text">Full Size Background Image<br>
+	Now we want to have a background image on a website that covers the entire browser window at all times.</div></div><br><br>
+
+	<div class="hero-image">
+    <div class="hero-text">
+    <h1 style="font-size:50px">I am John Doe</h1>
+    <h3>And I'm a Photographer</h3>
+    <button>Hire me</button>
+    </div>
+	</div>
+	<p>CSS background-origin Property<br>
+	The CSS background-origin property specifies where the background image is positioned.<br>
+
+	The property takes three different values:<br>
+
+	border-box - the background image starts from the upper left corner of the border<br>
+	padding-box - (default) the background image starts from the upper left corner of the padding edge<br>
+	content-box - the background image starts from the upper left corner of the content
+	</p>
+	<p>No background-origin (padding-box is default):</p>
+	<div id="example10">
+  <h2>Lorem Ipsum Dolor</h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p></div>
+  <p>background-origin: border-box:</p>
+<div id="example21">
+  <h2>Lorem Ipsum Dolor</h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p></div>
+  <p>background-origin: content-box:</p>
+<div id="example31">
+  <h2>Lorem Ipsum Dolor</h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p></div>
+  <p>CSS background-clip Property<br>
+	The CSS background-clip property specifies the painting area of the background.<br>
+
+	The property takes three different values:<br>
+
+	border-box - (default) the background is painted to the outside edge of the border<br>
+	padding-box - the background is painted to the outside edge of the padding<br>
+	content-box - the background is painted within the content box
+	</p>
+	<p>No background-clip (border-box is default):</p>
+	<div id="example12">
+	  <h2>Lorem Ipsum Dolor</h2>
+	  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+	</div>
+
+	<p>background-clip: padding-box:</p>
+	<div id="example22">
+	  <h2>Lorem Ipsum Dolor</h2>
+	  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+	</div>
+
+	<p>background-clip: content-box:</p>
+	<div id="example32">
+	  <h2>Lorem Ipsum Dolor</h2>
+	  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+	</div>
+	<p>CSS Color Keywords</p>
+	<p>The transparent Keyword<br>
+	The transparent keyword is used to make a color transparent. This is often used to make a transparent background color for an element.</p>
+	<div class="ex1">This div has a light green background.</div>
+	<br>
+	<div class="ex2">This div has a transparent background.</div>
+
+	<p>The currentcolor Keyword<br>
+	The currentcolor keyword is like a variable that holds the current value of the color property of an element.</p>
+	<div id="crntclr">
+	This div element has a blue text color and a blue border.
+	</div><br>
+	<div id="crntclr1out">
+	<div id="crntclr1in">
+	<p>This div's background color is set to the current color value of the body element.</p>
+	</div></div><br>
+	<div id="crntclr2out">
+	<div id="crntclr2in">
+	<p>This div's border color and shadow color is set to the current color value of the body element.</p>
+	</div></div>
+	<p>The inherit Keyword<br>
+	The inherit keyword specifies that a property should inherit its value from its parent element.<br>
+	The inherit keyword can be used for any CSS property, and on any HTML element.</p>
+	<div id="inherit11">Here, the <span>span element's</span> border settings will be inherited from the parent element.</div>
+	<br>
+	<div style="border:2px dotted blue;">Here, the <span>span element's</span> border settings will also be inherited from the parent element.</div>
+
+	<p>Multiple Shadows</p>
+	<p>To add more than one shadow to the text, you can add a comma-separated list of shadows.</p>
+	<h1 id="shdw">Text-shadow effect!</h1>
+	<h1 id="shdw1">Text-shadow effect!</h1>
+	<h1 id="shdw2">Text-shadow effect!</h1>
+	<p>Box Shadow</p>
+	<p>The CSS box-shadow property applies shadow to elements.</p>
+	<p>5px is Blur Effect</p>
+	<div id="bxshdw">This is a div element with a box-shadow</div>
+
+	<h2>CSS Text Effects</h2>
+	<p>CSS Text Overflow<br>
+	The CSS text-overflow property specifies how overflowed content that is not displayed should be signaled to the user.</p>
+
+	<h2>text-overflow: clip:</h2>
+	<p class="test1">This is some long text that will not fit in the box</p>
+
+	<h2>text-overflow: ellipsis:</h2>
+	<p class="test2">This is some long text that will not fit in the box</p>
+	<p>display the overflowed content when hovering over the element</p>
+
+	<div class="test" style="text-overflow:ellipsis;">This is some long text that will not fit in the box</div>
+	<br>
+	<div class="test" style="text-overflow:clip;">This is some long text that will not fit in the box</div>
+
+	<h2>CSS Word Wrapping</h2>
+	<p>The CSS word-wrap property allows long words to be able to be broken and wrap onto the next line.</p>
+	<p class="test"> This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
+
+	<h3>CSS Word Breaking</h3>
+	<p class="test10">This paragraph contains some text. This line will-break-at-hyphens.</p>
+
+	<p class="test20">This paragraph contains some text. The lines will break at any character.</p>
+
+	<p>CSS Writing Mode<br>
+	The CSS writing-mode property specifies whether lines of text are laid out horizontally or vertically.</p>
+
+	<p class="test11">Some text with default writing-mode.</p>
+
+	<p>Some text with a span element with a <span class="test2">vertical-rl</span> writing-mode.</p>
+
+	<p class="test213">Some text with writing-mode: vertical-rl.</p>
+
+	<h1>CSS Web Fonts</h1>
+<p>The CSS @font-face Rule<br>
+Web fonts allow Web designers to use fonts that are not installed on the user's computer.<br>
+When you have found/bought the font you wish to use, just include the font file on your web server, and it will be automatically downloaded to the user when needed.<br>
+Your "own" fonts are defined within the CSS @font-face rule.</p>
+
+<h3>Different Font Formats</h3>
+<p>TrueType Fonts (TTF)<br>
+TrueType is a font standard developed in the late 1980s, by Apple and Microsoft. TrueType is the most common font format for both the Mac OS and Microsoft Windows operating systems.<br><br>
+OpenType Fonts (OTF)<br>
+OpenType is a format for scalable computer fonts. It was built on TrueType, and is a registered trademark of Microsoft. OpenType fonts are used commonly today on the major computer platforms.<br><br>
+The Web Open Font Format (WOFF)<br>
+WOFF is a font format for use in web pages. It was developed in 2009, and is now a W3C Recommendation. WOFF is essentially OpenType or TrueType with compression and additional metadata. The goal is to support font distribution from a server to a client over a network with bandwidth constraints.<br><br>
+The Web Open Font Format (WOFF 2.0)<br>
+TrueType/OpenType font that provides better compression than WOFF 1.0.<br><br>
+SVG Fonts/Shapes<br>
+SVG fonts allow SVG to be used as glyphs when displaying text. The SVG 1.1 specification define a font module that allows the creation of fonts within an SVG document. You can also apply CSS to SVG documents, and the @font-face rule can be applied to text in SVG documents.<br><br>
+Embedded OpenType Fonts (EOT)<br>
+EOT fonts are a compact form of OpenType fonts designed by Microsoft for use as embedded fonts on web pages.</p>
+
+<h5>Using The Font You Want</h5>
+<p>In the @font-face rule; first define a name for the font (e.g. myFirstFont) and then point to the font file.<br>
+Tip: Always use lowercase letters for the font URL. Uppercase letters can give unexpected results in IE.<br>
+To use the font for an HTML element, refer to the name of the font (myFirstFont) through the font-family property:</p>
+<div id="fontface">
+With CSS, websites can use fonts other than the pre-selected "web-safe" fonts.
+</div>
+<div id="fontface1">
+With CSS, websites can use <b>fonts other than the pre-selected "web-safe" fonts</b>.
+</div>
+<p>font-stretch	</p>
+<p id="fontstretch">NORMAL</p>
+<p id="fontstretch1">condensed</p>
+<p id="fontstretch2">ultra condensed</p>
+<p id="fontstretch3">extra condensed</p>
+<p id="fontstretch4">semi condensed</p>
+<p id="fontstretch5">expanded</p>
+<p id="fontstretch6">semi expanded</p>
+<p id="fontstretch7">extra expanded</p>
+<p id="fontstretch8">ultra expanded</p>
+
+<h3>CSS 2D Transforms</h3>
+<p>CSS transforms allow you to move, rotate, scale, and skew elements.</p>
+<p>CSS 2D Transforms Methods</p>
+<p>The translate() Method<br>
+	The translate() method moves an element from its current position (according to the parameters given for the X-axis and the Y-axis).<br>
+The following example moves the <div> element 50 pixels to the right, and 100 pixels down from its current position:
+</p>
+<div id="transform">
+This div element is moved 50 pixels to the right, and 100 pixels down from its current position.
+</div><br><br><br><br><br>
+<p>The rotate() Method</p>
+<p>The rotate() method rotates an element clockwise or counter-clockwise according to a given degree.</p><br><br><br>
+<div id="myDiv">
+This div element is rotated clockwise 20 degrees.
+</div><br><br><br><br><br><br><br><br>
+<div id="myDiv1">
+This div element is rotated clockwise 20 degrees.
+</div><br><br><br><br>
+<p>The scale() Method</p>
+<p>The scale() method increases or decreases the size of an element (according to the parameters given for the width and height).</p>
+<div id="transformscale">
+This div element is two times of its original width, and three times of its original height.
+</div>
+<div id="transformscale1">
+This div element is two times of its original width, and three times of its original height.
+</div>
+<div id="transformscale2">
+This div element is two times of its original width, and three times of its original height.
+</div>
+<p>The scaleX() Method<br>
+The scaleX() method increases or decreases the width of an element.</p>
+<div id="transformscalex">
+This div element is two times of its original width.
+</div>
+<div id="transformscalex1">
+This div element is half of its original width.
+</div>
+<p>The scaleY() Method<br>
+The scaleY() method increases or decreases the height of an element.</p>
+<div id="transformscaley">
+This div element is three times of its original height.
+</div>
+<div id="transformscaley1">
+This div element is three times of its original height.
+</div>
+<p>The skewX() Method<br>
+The skewX() method skews an element along the X-axis by the given angle.</p>
+<div id="myDiv11">
+This div element is skewed 20 degrees along the X-axis.
+</div>
+<div id="myDiv12">
+This div element is skewed 20 degrees along the X-axis.
+</div>
+<p>The skewY() Method<br>
+The skewY() method skews an element along the Y-axis by the given angle.</p>
+<div id="myDiv22">
+This div element is skewed 20 degrees along the Y-axis.
+</div>
+<div id="myDiv21">
+This div element is skewed 20 degrees along the Y-axis.
+</div>
+
+<p>The skew() Method<br>
+The skew() method skews an element along the X and Y-axis by the given angles.</p>
+<div id="myDiv3">
+This div element is skewed 20 degrees along the X-axis, and 10 degrees along the Y-axis.
+</div>
+<p>The matrix() Method<br>
+The matrix() method combines all the 2D transform methods into one.<br>
+The matrix() method take six parameters, containing mathematic functions, which allows you to rotate, scale, move (translate), and skew elements.<br>
+The parameters are as follow: matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())</p>
+<div id="myDiv41">
+Using the matrix() method.
+</div>
+
+<div id="myDiv42">
+Another use of the matrix() method.
+</div>
+
+<h2>CSS 3D Transforms</h2>
+<p>The rotateX() Method</p>
+<p>The rotateX() method rotates an element around its X-axis at a given degree:</p>
+<div id="myDiv51">
+This div element is rotated 150 degrees.
+</div>
+
+<p>The rotateY() Method<br>
+	The rotateY() method rotates an element around its Y-axis at a given degree:</p>
+<div id="myDiv61">
+This div element is rotated 150 degrees.
+</div>
+<p>The rotateZ() Method<br>
+The rotateZ() method rotates an element around its Z-axis at a given degree</p>
+<div id="myDiv71">
+This div element is rotated 90 degrees.
+</div>
+<p>CSS transform-origin Property<br>
+The transform-origin property allows you to change the position of transformed elements.<br>
+2D transformations can change the x- and y-axis of an element. 3D transformations can also change the z-axis of an element.</p>
+<div id="div2">HELLO</div><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p>CSS transform-style Property<br>
+The transform-style property specifies how nested elements are rendered in 3D space.</p>
+<p><b>flat</b>	<br>Specifies that child elements will NOT preserve its 3D position. This is default<br>
+<b>preserve-3d</b>	<br>Specifies that child elements will preserve its 3D position</p>
+<div id="div21">HELLO
+  <div id="div31">YELLOW</div>
+  </div><br><br><br><br><br><br><br><br><br><br><br><br>
+<p>CSS perspective Property<br>
+The perspective property is used to give a 3D-positioned element some perspective.<br>
+The perspective property defines how far the object is away from the user. So, a lower value will result in a more intensive 3D effect than a higher value.<br>
+When defining the perspective property for an element, it is the CHILD elements that get the perspective view, NOT the element itself.</p>
+<h2>perspective: 100px:</h2>
+<div id="div10">DIV10
+  <div id="div20">DIV20</div>
+</div>
+
+<h2>perspective: none:</h2>
+<div id="div30">DIV30
+  <div id="div40">DIV40</div>
+</div>
+<div id="div100">DIV 1</div>
+<div id="div200">DIV 2</div>
+
+<p>CSS Transitions<br>
+CSS transitions allows you to change property values smoothly, over a given duration.</p>
+<p>How to Use CSS Transitions?<br>
+To create a transition effect, you must specify two things:<br>
+the CSS property you want to add an effect to<br>
+the duration of the effect<br>
+Note: If the duration part is not specified, the transition will have no effect, because the default value is 0.</p>
+<div id="trns1"></div><br><br>
+<div id="trns2"></div>
+<p>Specify the Speed Curve of the Transition<br>
+The transition-timing-function property specifies the speed curve of the transition effect.<br>
+The transition-timing-function property can have the following values:<br>
+ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default)<br>
+linear - specifies a transition effect with the same speed from start to end<br>
+ease-in - specifies a transition effect with a slow start<br>
+ease-out - specifies a transition effect with a slow end<br>
+ease-in-out - specifies a transition effect with a slow start and end<br>
+cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function</p>
+<div id="div13" class="t1">linear</div><br>
+<div id="div23" class="t1">ease</div><br>
+<div id="div33" class="t1">ease-in</div><br>
+<div id="div43" class="t1">ease-out</div><br>
+<div id="div53" class="t1">ease-in-out</div>
+<p>Delay the Transition Effect<br>
+The transition-delay property specifies a delay (in seconds) for the transition effect.</p>
+<div id="trns3"></div>
+<h3>Transition + Transformation</h3>
+<div id="trns4"></div>
+<h4>Transistion Syntax</h4>
+<code>transition: property duration timing-function delay|initial|inherit;</code>
+
+<p>CSS Animations<br>
+CSS allows animation of HTML elements without using JavaScript or Flash!</p>
+<p>What are CSS Animations?<br>
+An animation lets an element gradually change from one style to another.<br>
+You can change as many CSS properties you want, as many times as you want.<br>
+To use CSS animation, you must first specify some keyframes for the animation.<br>
+Keyframes hold what styles the element will have at certain times.</p>
+<p>The @keyframes Rule<br>
+When you specify CSS styles inside the @keyframes rule, the animation will gradually change from the current style to the new style at certain times.<br>
+To get an animation to work, you must bind the animation to an element.</p>
+<div id="anmts1"></div>
+<p>Note: The animation-duration property defines how long an animation should take to complete. If the animation-duration property is not specified, no animation will occur, because the default value is 0s (0 seconds). <br>
+In the example above we have specified when the style will change by using the keywords "from" and "to" (which represents 0% (start) and 100% (complete)).<br>
+It is also possible to use percent. By using percent, you can add as many style changes as you like.</p>
+<div id="anmts2"></div>
+<div id="anmts3"></div>
+<p>Delay an Animation<br>
+The animation-delay property specifies a delay for the start of an animation.</p>
+<div id="anmts4"></div>
+<p>Negative values are also allowed. If using negative values, the animation will start as if it had already been playing for N seconds.</p>
+<div id="anmts5"></div>
+<p>Set How Many Times an Animation Should Run<br>
+The animation-iteration-count property specifies the number of times an animation should run.</p>
+<div id="anmts6"></div>
+<p>The following example uses the value "infinite" to make the animation continue for ever:</p>
+<div id="anmts7"></div>
+<p>Run Animation in Reverse Direction or Alternate Cycles<br>
+The animation-direction property specifies whether an animation should be played forwards, backwards or in alternate cycles.<br>
+The animation-direction property can have the following values:<br>
+normal - The animation is played as normal (forwards). This is default<br>
+reverse - The animation is played in reverse direction (backwards)<br>
+alternate - The animation is played forwards first, then backwards<br>
+alternate-reverse - The animation is played backwards first, then forwards</p>
+<p>REVERSE</p>
+<div id="anmts8"></div>
+<p>ALTERNATE</p>
+<div id="anmts9"></div>
+<p>ALTERNATE-REVERSE</p>
+<div id="anmts10"></div>
+<p>Specify the Speed Curve of the Animation<br>
+The animation-timing-function property specifies the speed curve of the animation.<br>
+The animation-timing-function property can have the following values:<br>
+ease - Specifies an animation with a slow start, then fast, then end slowly (this is default)<br>
+linear - Specifies an animation with the same speed from start to end<br>
+ease-in - Specifies an animation with a slow start<br>
+ease-out - Specifies an animation with a slow end<br>
+ease-in-out - Specifies an animation with a slow start and end<br>
+cubic-bezier(n,n,n,n) - Lets you define your own values in a cubic-bezier function</p>
+<div id="div14">linear</div>
+<div id="div24">ease</div>
+<div id="div34">ease-in</div>
+<div id="div44">ease-out</div>
+<div id="div54">ease-in-out</div>
+
+<p>Specify the fill-mode For an Animation
+CSS animations do not affect an element before the first keyframe is played or after the last keyframe is played. The animation-fill-mode property can override this behavior.<br>
+The animation-fill-mode property specifies a style for the target element when the animation is not playing (before it starts, after it ends, or both).<br>
+The animation-fill-mode property can have the following values:<br>
+none - Default value. Animation will not apply any styles to the element before or after it is executing<br>
+forwards - The element will retain the style values that is set by the last keyframe (depends on animation-direction and animation-iteration-count)<br>
+backwards - The element will get the style values that is set by the first keyframe (depends on animation-direction), and retain this during the animation-delay period<br>
+both - The animation will follow the rules for both forwards and backwards, extending the animation properties in both directions</p> 
+<p>FORWARDS</p>
+<div id="anmts11"></div>
+<p>BACKWARDS</p>
+<div id="anmts12"></div><br><br><br><br><br><br><br><br><br>
+<p>BOTH</p>
+<div id="anmts13"></div><br><br><br><br><br><br><br><br><br><br><br>
+
+<p>Animation Shorthand Property</p>
+<code>animation-name: example;<br>
+  animation-duration: 5s;<br>
+  animation-timing-function: linear;<br>
+  animation-delay: 2s;<br>
+  animation-iteration-count: infinite;<br>
+  animation-direction: alternate;
+</code>
+<code>  animation: example 5s linear 2s infinite alternate;
+</code><br><br><br><br>
+<code>animation-play-state: paused|running|initial|inherit;
+</code><br><br><br><br>
+<p>CSS Tooltip</p>
+<p>A tooltip is often used to specify extra information about something when the user moves the mouse pointer over an element:</p>
+<p>CSS Styling Images</p>
+<p>Rounded Images</p>
+<img id="rimg" src="IMAGES/paris.jpg" alt="Paris" width="300" height="300">
+<p>CIrcled images</p>
+<img id="cimg" src="IMAGES/paris.jpg" alt="Paris" width="300" height="300">
+<p>Thumbnail Images</p>
+<a href="Images/paris.jpg">
+<img id="timg" src="IMAGES/paris.jpg" alt="paris"></a>
+
+<p>Responsive Images<br>
+Responsive images will automatically adjust to fit the size of the screen.</p>
+<img id="reimg" src="img_5terre_wide.jpg" alt="Cinque Terre" width="1000" height="300">
+<p>Center an Image</p>
+<p>To center an image, set left and right margin to auto and make it into a block element:</p>
+<img id="ceimg" src="paris.jpg" alt="Paris" style="width:50%">
+<p>Image Filters<br>The CSS filter property adds visual effects (like blur and saturation) to an element.</p>
+<p>normal img :</p>
+<img src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br>
+<p>BLur Image :</p>
+<img class="blur" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br>
+<p>Brightness Image :</p>
+<img class="brightness" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br>
+<img class="brightness1" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br>
+<p>Contrast Image :</p>
+<img class="contrast" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br>
+<img class="contrast1" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br>
+<img class="contrast2" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br>
+<p>Grayscale Image :</p>
+<img class="grayscale" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br>
+<img class="grayscale1" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br>
+<img class="grayscale2" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br>
+<p>Huerotate</p>
+<img class="huerotate" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br>
+<img class="huerotate1" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br>
+<img class="huerotate2" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br>
+<img class="huerotate3" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br>
+<img class="huerotate4" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br>
+<p>INvert Image :</p>
+<img class="invert" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br>
+<img class="invert1" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br>
+<img class="invert2" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br>
+<img class="invert3" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br>
+<img class="invert4" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br>
+<p>Opacity Image :</p>
+<img class="opacity" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br>
+<img class="opacity1" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br>
+<img class="opacity2" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br>
+<img class="opacity3" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br>
+<p>Saturate Image :</p>
+<img class="saturate" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br>
+<img class="saturate1" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br>
+<img class="saturate2" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br>
+<img class="saturate3" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br>
+<img class="saturate4" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br>
+<p>Sepia Image :</p>
+<img class="sepia" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br>
+<img class="sepia1" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br>
+<img class="sepia2" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br>
+<img class="sepia3" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br>
+<img class="sepia4" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br>
+<p>Shadow Image :</p>
+<img class="shadow" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br><br><br><br>
+<img class="shadow1" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br><br><br><br>
+<img class="shadow2" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br><br><br><br>
+<img class="shadow3" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br><br><br><br>
+<img class="shadow4" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br><br><br><br>
+<img class="shadow5" src="pineapple.jpg" alt="Pineapple" width="300" height="300"><br><br><br><br>
+
+<p>Image Hover Overlay</p>
+<div class="container">
+  <img src="IMAGES/img_avatar.png" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Hello World</div>
+  </div>
+</div>
+<h2>Fade in a Box</h2>
+<div class="container1">
+  <img src="IMAGES/img_avatar.png" alt="Avatar" class="image1" style="width:100%">
+  <div class="middle1">
+    <div class="text1">John Doe</div>
+  </div>
+</div>
+<br><br>
+<a href="https://www.w3schools.com/css/css3_images.asp">Styling Images</a><br><br>
+<a href="https://www.w3schools.com/css/css3_image_reflection.asp">CSS Image Reflection</a><br>
+<img id="imgreflect" src="img_tree.png"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<img id="imgreflect1" src="img_tree.png"><br>
+<a href="https://www.w3schools.com/css/css3_object-fit.asp">CSS The object-fit Property
+</a><br>
+<p>Here is where the object-fit property comes in. The object-fit property can take one of the following values:<br>
+fill - This is default. The image is resized to fill the given dimension. If necessary, the image will be stretched or squished to fit<br>
+contain - The image keeps its aspect ratio, but is resized to fit within the given dimension<br>
+cover - The image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit<br>
+none - The image is not resized<br>
+scale-down - the image is scaled down to the smallest version of none or contain</p>
+<img src="IMAGES/paris.jpg"><br>
+<img src="IMAGES/paris.jpg" id="img1"><br>
+<img src="IMAGES/paris.jpg" id="img2"><br>
+<img src="IMAGES/paris.jpg" id="img3"><br>
+<img src="IMAGES/paris.jpg" id="img4"><br>
+<img src="IMAGES/paris.jpg" id="img5"><br>
+<p>CSS The object-position Property<br>The CSS object-position property is used to specify how an < img> or < video> should be positioned within its container.</p>
+<img src="IMAGES/paris.jpg" alt="Paris" width="400" height="300" id="objpos"><br>
+<img src="IMAGES/paris.jpg" alt="Paris" width="400" height="300" id="objpos1"><br>
+<img src="IMAGES/paris.jpg" alt="Paris" width="400" height="300" id="objpos2"><br>
+<img src="IMAGES/paris.jpg" alt="Paris" width="400" height="300" id="objpos3"><br>
+<p>CSS Buttons</p>
+<button>Default Button</button><br>
+<a href="#" class="button">Link Button</a><br>
+<button class="button">Button</button><br>
+<input type="button" class="button" value="Input Button"><br>
+<button class="button">Green</button><br>
+<button class="button button2">Blue</button><br>
+<button class="button button3">Red</button><br>
+<button class="button button4">Gray</button><br>
+<button class="button button5">Black</button>
+<br>
+
+<button class="button button11">Green</button><br><br>
+<button class="button button21">Blue</button><br><br>
+<button class="button button31">Red</button><br><br>
+<button class="button button41">Gray</button><br><br>
+<button class="button button51">Black</button><br><br>
+<button class="button disabled">Disabled Button</button>
+<div class="btn-group">
+  <button class="button7">Button</button>
+  <button class="button7">Button</button>
+  <button class="button7">Button</button>
+  <button class="button7">Button</button>
+</div><br><br><br><br>
+<div class="btn-group1">
+  <button class="button8">Button</button>
+  <button class="button8">Button</button>
+  <button class="button8">Button</button>
+  <button class="button8">Button</button>
+</div><br><br><br><br>
+<div class="btn-group2">
+  <button class="button9">Button</button>
+  <button class="button9">Button</button>
+  <button class="button9">Button</button>
+  <button class="button9">Button</button>
+</div><br>
+<div class="container1">
+  <img src="IMAGES/img_lights.jpg" alt="Snow" style="width:100%">
+  <button class="btn1">Button</button>
+</div>
+<button class="button6" style="vertical-align:middle"><span>Hover </span></button>
+<p>CSS Pagination Examples</p>
+<div id="center">
+<div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a href="#" class="active">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+</div></div>
+<br>
+<h2>Breadcrumb Pagination</h2>
+<ul class="breadcrumb">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Pictures</a></li>
+  <li><a href="#">Summer 15</a></li>
+  <li>Italy</li>
+</ul>
+<p>CSS Multiple Columns</p>
+<p>CSS Multi-column Properties<br>
+In this chapter you will learn about the following multi-column properties:<br>
+column-count<br>
+column-gap<br>
+column-rule-style<br>
+column-rule-width<br>
+column-rule-color<br>
+column-rule<br>
+column-span<br>
+column-width</p>
+<h2 id="columnspan">Lorem Ipsum Dolor Sit Amet</h2>
+<div class="newspaper">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+</div>
+<p>CSS User Interface</p>
+<p>CSS Resizing</p>
+<p>RESIZE HORIZANTAL</p>
+<div id="resize">
+  <p>Let the user resize only the width of this div element.</p>
+  <p>To resize: Click and drag the bottom right corner of this div element.</p>
+</div>
+<p>RESIZE VERTICAL</p>
+<div id="resize1">
+  <p>Let the user resize only the width of this div element.</p>
+  <p>To resize: Click and drag the bottom right corner of this div element.</p>
+</div>
+<p>RESIZE BOTH SIDES</p>
+<div id="resize2">
+  <p>Let the user resize only the width of this div element.</p>
+  <p>To resize: Click and drag the bottom right corner of this div element.</p>
+</div>
+<p>CSS Outline Offset</p>
+<p>The outline-offset property adds space between an outline and the edge or border of an element.</p>
+<div class="ex1">This div has a 4 pixels solid red outline 15 pixels outside the border edge.</div>
+<br>
+
+<div class="ex2">This div has a 5 pixels dashed blue outline 5 pixels outside the border edge.</div><br>
+<a href="https://www.w3schools.com/css/css3_box-sizing.asp">CSS BOX SIZING</a>
+<br>
+<p>CSS Flexbox<br>
+CSS Flexbox Layout Module<br>
+Before the Flexbox Layout module, there were four layout modes:<br>
+Block, for sections in a webpage<br>
+Inline, for text<br>
+Table, for two-dimensional table data<br>
+Positioned, for explicit position of an element<br>
+The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning.</p>
+
+<div class="flex-container">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>
+	<div>7</div>
+	<div>8</div>
+	<div>9</div>
+	<div>10</div>
+	<div>11</div>
+	<div>12</div>
+	<div>13</div>
+	<div>14</div>
+	<div>15</div>
+	<div>16</div>
+	<div>17</div>
+	<div>18</div>
+	<div>19</div>
+	<div>20</div>
+</div>
+<p>The flex container becomes flexible by setting the display property to flex:
+<br>The flex container properties are:<br>
+The flex-direction Property<br>
+The flex-direction property defines in which direction the container wants to stack the flex items.<br>The column value stacks the flex items vertically (from top to bottom):<br><br>The column-reverse value stacks the flex items vertically (but from bottom to top):<br>
+The row value stacks the flex items horizontally (from left to right):<br>
+The row-reverse value stacks the flex items horizontally (but from right to left):</p>
+<p>The flex-wrap Property<br>
+The flex-wrap property specifies whether the flex items should wrap or not.<br>
+The examples below have 12 flex items, to better demonstrate the flex-wrap property.</p>
+<p>The wrap value specifies that the flex items will wrap if necessary:<br>
+The nowrap value specifies that the flex items will not wrap (this is default):<br>
+The wrap-reverse value specifies that the flexible items will wrap if necessary, in reverse order:</p>
+<p>The flex-flow Property<br>
+The flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties.</p>
+<p>The justify-content Property<br>
+The justify-content property is used to align the flex items:<br>
+The center value aligns the flex items at the center of the container:<br>
+The flex-start value aligns the flex items at the beginning of the container (this is default):<br>
+The flex-end value aligns the flex items at the end of the container:<br>
+The space-around value displays the flex items with space before, between, and after the lines:<br>
+The space-between value displays the flex items with space between the lines:</p>
+<p>The align-items Property<br>
+The align-items property is used to align the flex items.</p>
+<p>The center value aligns the flex items in the middle of the container:<br>
+The flex-start value aligns the flex items at the top of the container:<br>
+The flex-end value aligns the flex items at the bottom of the container:<br>
+The stretch value stretches the flex items to fill the container (this is default):<br>
+The baseline value aligns the flex items such as their baselines aligns:</p>
+
+<p>The align-content Property
+The align-content property is used to align the flex lines.<br>
+The space-between value displays the flex lines with equal space between them:<br>
+The space-around value displays the flex lines with space before, between, and after them:<br>
+The stretch value stretches the flex lines to take up the remaining space (this is default):<br>The center value displays display the flex lines in the middle of the container:<br>
+The flex-start value displays the flex lines at the start of the container:<br>
+The flex-end value displays the flex lines at the end of the container: </p>
+
+<p>The flex item properties are:<br>
+order<br>
+flex-grow<br>
+flex-shrink<br>
+flex-basis<br>
+flex<br>
+align-self
+</p>
+<p>The order Property<br>
+The order property specifies the order of the flex items.</p>
+<div class="flex-container1">
+	<div style="order: 3">1</div>
+	<div style="order: 2">2</div>
+	<div style="order: 4">3</div>
+	<div style="order: 1">4</div>
+</div>
+
+<p>The flex-grow Property<br>
+The flex-grow property specifies how much a flex item will grow relative to the rest of the flex items.</p>
+<div class="flex-container2">
+	<div style="flex-grow: 1">1</div>
+	<div style="flex-grow: 1">2</div>
+	<div style="flex-grow: 8">3</div>
+</div>
+<p>The flex-shrink Property<br>
+The flex-shrink property specifies how much a flex item will shrink relative to the rest of the flex items.</p>
+<div class="flex-container3">
+	<div>1</div>
+	<div>2</div>
+	<div style="flex-shrink: 0">3</div>
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>
+	<div>7</div>
+	<div>8</div>
+	<div>9</div>
+	<div>10</div>
+</div>
+<p>The flex-basis Property<br>
+The flex-basis property specifies the initial length of a flex item.</p>
+<div class="flex-container3">
+	<div>1</div>
+	<div>2</div>
+	<div style="flex-basis: 200px">3</div>
+	<div>4</div>
+</div>
+<p>The flex Property<br>
+The flex property is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties.</p>
+<p>The align-self Property<br>
+The align-self property specifies the alignment for the selected item inside the flexible container.<br>
+The align-self property overrides the default alignment set by the container's align-items property.</p>
+<div class="flex-container4">
+	<div>1</div>
+	<div style="align-self:flex-start;">2</div>
+	<div style="align-self:center;">3</div>
+	<div style="align-self: flex-end;">4</div>
+</div>
+<h1>CSS Grid Layout Module</h1>
+<p>Grid Layout<br>
+The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.</p>
+<p>Grid Elements<br>
+A grid layout consists of a parent element, with one or more child elements.</p>
+<div class="grid-container">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>  
+  <div class="grid-item">4</div>
+  <div class="grid-item">5</div>
+  <div class="grid-item">6</div>  
+  <div class="grid-item">7</div>
+  <div class="grid-item">8</div>
+  <div class="grid-item">9</div>  
+</div>
+
+<p>Display Property<br>
+An HTML element becomes a grid container when its display property is set to grid or inline-grid.<br>
+All direct children of the grid container automatically become grid items.</p><br><br>
+<p>You can adjust the gap size by using one of the following properties:<br>
+grid-column-gap<br>
+grid-row-gap<br>
+grid-gap</p>
+
+<div class="grid-container1">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>  
+  <div class="grid-item">4</div>
+  <div class="grid-item">5</div>
+  <div class="grid-item">6</div>  
+  <div class="grid-item">7</div>
+  <div class="grid-item">8</div>
+  <div class="grid-item">9</div>  
+</div>
+
+<h2>The grid-row-gap Property:</h2>
+
+<div class="grid-container2">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>  
+  <div class="grid-item">4</div>
+  <div class="grid-item">5</div>
+  <div class="grid-item">6</div>  
+  <div class="grid-item">7</div>
+  <div class="grid-item">8</div>
+  <div class="grid-item">9</div>  
+</div>
+<p>The grid-gap property is a shorthand property for the grid-row-gap and the grid-column-gap properties:</p>
+<code>  grid-gap: 50px 100px;</code>
+<p>The grid-gap property can also be used to set both the row gap and the column gap in one value:</p>
+<code>  grid-gap: 50px;</code>
+<p>Grid Lines<br>
+The lines between columns are called column lines.<br>
+The lines between rows are called row lines.</p>
+
+<div class="grid-container4">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>  
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+  <div class="item6">6</div>
+  <div class="item7">7</div>
+  <div class="item8">8</div>  
+</div>
+
+
+<p>Place a grid item at row line 1, and let it end on row line 3:</p>
+
+<div class="grid-container5">
+  <div class="item11">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>  
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+  <div class="item6">6</div>
+  <div class="item7">7</div>
+  <div class="item8">8</div>  
+</div>
+
+<h2>CSS Grid Container</h2>
+<p>To make an HTML element behave as a grid container, you have to set the display property to grid or inline-grid.<br>
+Grid containers consist of grid items, placed inside columns and rows.</p>
+<h4>The grid-template-columns Property</h4>
+<p>The grid-template-columns property defines the number of columns in your grid layout, and it can define the width of each column.<br>
+The value is a space-separated-list, where each value defines the width of the respective column.<br>
+If you want your grid layout to contain 4 columns, specify the width of the 4 columns, or "auto" if all columns should have the same width.</p>
+
+<div class="grid-container11">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>  
+  <div>7</div>
+  <div>8</div>
+</div>
+<b>Note: If you have more than 4 items in a 4 columns grid, the grid will automatically add a new row to put the items in.</b>
+
+<p>The grid-template-columns property can also be used to specify the size (width) of the columns.</p>
+<div class="grid-container12">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>  
+  <div>7</div>
+  <div>8</div>
+</div>
+<p>The grid-template-rows Property<br>
+The grid-template-rows property defines the height of each row.</p>
+
+<div class="grid-container13">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>  
+</div>
+<p>The justify-content Property<br>
+The justify-content property is used to align the whole grid inside the container.</p>
+<p>Note: The grid's total width has to be less than the container's width for the justify-content property to have any effect.</p>
+<div class="grid-container14">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>  
+</div>
+<p>The align-content Property<br>
+The align-content property is used to vertically align the whole grid inside the container.</p>
+<p>Note: The grid's total height has to be less than the container's height for the align-content property to have any effect.</p>
+<div class="grid-container15">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>  
+</div>
+
+<p>The grid-column Property:<br>
+The grid-column property defines on which column(s) to place an item.<br>
+You define where the item will start, and where the item will end.</p>
+<div class="grid-container9">
+	<div class="item31">1</div>
+	<div class="item32">2</div>
+	<div class="item33">3</div>
+	<div class="item34">4</div>
+	<div class="item35">5</div>
+	<div class="item36">6</div>
+	<div class="item37">7</div>
+	<div class="item38">8</div>
+	<div class="item39">9</div>
+	<div class="item40">10</div>
+	<div class="item41">11</div>
+	<div class="item42">12</div>
+	<div class="item43">13</div>
+	<div class="item44">14</div>
+	<div class="item45">15</div>
+</div>
+<p>The grid-row Property:<br>
+The grid-row property defines on which row to place an item.<br>
+You define where the item will start, and where the item will end.</p>
+<div class="grid-container8">
+	<div class="item51">1</div>
+	<div class="item52">2</div>
+	<div class="item53">3</div>
+	<div class="item54">4</div>
+	<div class="item55">5</div>
+	<div class="item56">6</div>
+	<div class="item57">7</div>
+	<div class="item58">8</div>
+	<div class="item59">9</div>
+	<div class="item60">10</div>
+	<div class="item61">11</div>
+	<div class="item62">12</div>
+	<div class="item63">13</div>
+	<div class="item64">14</div>
+	<div class="item65">15</div>
+</div>
+
+<p>The grid-area Property<br>
+The grid-area property can be used as a shorthand property for the grid-row-start, grid-column-start, grid-row-end and the grid-column-end properties.</p>
+<div class="grid-container7">
+	<div class="item71">1</div>
+	<div class="item72">2</div>
+	<div class="item73">3</div>
+	<div class="item74">4</div>
+	<div class="item75">5</div>
+	<div class="item76">6</div>
+	<div class="item77">7</div>
+	<div class="item78">8</div>
+	<div class="item79">9</div>
+	<div class="item80">10</div>
+	<div class="item81">11</div>
+	<div class="item82">12</div>
+	<div class="item83">13</div>
+	<div class="item84">14</div>
+	<div class="item85">15</div>
+</div>
+
+<p>Naming Grid Items<br>
+The grid-area property can also be used to assign names to grid items.<br>
+Named grid items can be referred to by the grid-template-areas property of the grid container.</p>
+
+
+
+<div class="grid-container6">
+  <div class="item91">1</div>
+  <div class="item92">2</div>
+  <div class="item93">3</div>  
+  <div class="item94">4</div>
+  <div class="item95">5</div>
+  <div class="item96">6</div>
+</div>
+<p>Each row is defined by apostrophes (' ')<br>
+The columns in each row is defined inside the apostrophes, separated by a space.<br>
+Note: A period sign represents a grid item with no name.</p>
+<div class="grid-container5">
+  <div class="itema1">1</div>
+  <div class="itema2">2</div>
+  <div class="itema3">3</div>  
+  <div class="itema4">4</div>
+  <div class="itema5">5</div>
+  <div class="itema6">6</div>
+  <div class="itema7">7</div>
+  <div class="itema8">8</div>
+  <div class="itema9">9</div>
+</div>
+<br><br><br><br>
+<div class="grid-container51">
+  <div class="itemb1">1</div>
+  <div class="itemb2">2</div>
+  <div class="itemb3">3</div>  
+  <div class="itemb4">4</div>
+  <div class="itemb5">5</div>
+  <div class="itemb6">6</div>
+  <div class="itemb7">7</div>
+</div>
+<p>Name all items, and make a ready-to-use webpage template:</p>
+<div class="grid-container52"> 
+	<div class="itemc1">Header</div>
+  <div class="itemc2">Menu</div>
+  <div class="itemc3">Main</div>  
+  <div class="itemc4">Right</div>
+  <div class="itemc5">Footer</div>
+</div>
+
+<p>The Order of the Items<br>
+The Grid Layout allows us to position the items anywhere we like.<br>
+The first item in the HTML code does not have to appear as the first item in the grid.</p>
+
+<div class="grid-container53">
+  <div class="itemd1">1</div>
+  <div class="itemd2">2</div>
+  <div class="itemd3">3</div>  
+  <div class="itemd4">4</div>
+  <div class="itemd5">5</div>
+  <div class="itemd6">6</div>
+</div>
+<p>You can re-arrange the order for certain screen sizes, by using media queries:</p>
+<div class="grid-container54">
+  <div class="iteme1">1</div>
+  <div class="iteme2">2</div>
+  <div class="iteme3">3</div>  
+  <div class="iteme4">4</div>
+  <div class="iteme5">5</div>
+  <div class="iteme6">6</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

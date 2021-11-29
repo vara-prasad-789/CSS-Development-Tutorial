@@ -1,0 +1,44 @@
+body#HTML{
+	font-size: 160%;
+	background-color: #f3f3f3;
+}
+body#heading{background-color: #f3f3f3;}
+h1#h1{color: forestgreen; background-color: greenyellow;}
+h2#h2{color: indianred; background-color: darkorange;}
+h3#h3{color: hotpink; background-color: blueviolet;}
+h4#h4{color: royalblue;background-color: indianred;}
+h5#h5{color: blueviolet;background-color: forestgreen;}
+h6#h6{color: darkorange;background-color: blueviolet;}
+p#head{color: greenyellow;background-color: blueviolet;}
+h1,h2,h3,h4,h5,h6.h1{width: 400px;}
+body#textedit{background-color: lightskyblue;}
+b{color: darkcyan;}
+i{color: #ee3e80;}
+sup{color: rgb(100, 100, 100);}
+sub{background-color: rgb(200, 200, 200);}
+p#wsc{font-weight: lighter;}
+p#br{font-weight: normal;}
+div#hr{font-weight: bolder;}
+blockquote{font-style: oblique;
+		letter-spacing: 0.2em;}
+cite{font-size: 20px;}
+dfn{font-size: 75%;}
+q{font-size: 1.3em;}
+del{text-transform: uppercase;}
+ins{text-transform: capitalize;}
+s{text-transform: lowercase;}
+abbr{text-decoration: none;}
+acronym{text-decoration: overline;}
+span{text-decoration: blink;}
+em{word-spacing: 2em;}
+p{word-spacing: 0.3em;}
+*{line-height: 1.6em;}
+div#listindex{text-align: center;}
+h3#odl{text-indent: -9999px; }
+div#odl{ text-shadow: 2px 2px 4px #666666; }
+p:first-letter{font-size: 33px;}
+a:link{
+	color: blue;
+	text-decoration: none;}
+a:visited{
+	color: blue;}
