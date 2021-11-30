@@ -9,7 +9,52 @@
   <script src="https://kit.fontawesome.com/d45632cfce.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<style>
+p.uppercase {
+  text-transform: uppercase;
+}
 
+p.lowercase {
+  text-transform: lowercase;
+}
+
+p.capitalize {
+  text-transform: capitalize;
+}
+		p.normal1 {
+  font-style: normal;
+}
+
+p.italic {
+  font-style: italic;
+}
+
+p.oblique {
+  font-style: oblique;
+}
+		p.normal11 {
+  font-weight: normal;
+}
+
+p.light {
+  font-weight: lighter;
+}
+
+p.thick {
+  font-weight: bold;
+}
+
+p.thicker {
+  font-weight: 900;
+}
+		p.normal111 {
+  font-variant: normal;
+}
+
+p.small {
+  font-variant: small-caps;
+}
+</style>
 </head>
 <body>
 
@@ -111,23 +156,24 @@ By default, the image is repeated so it covers the entire element.</p>
 <div id="example3">
   <p>The background extends to the edge of the content box.</p>
 </div><br>
-<br>
-<div id="grad1" class="line">Linear Gradient - Top to Bottom</div>
-<div id="grad2" class="line">Linear Gradient - Left to Right</div>
-<div id="grad3" class="line">Linear Gradient - Diagonal(top left to bottom right)</div>
-<div id="grad4" class="line">linear-gradient(0deg, red, yellow)</div>
-<div id="grad5" class="line">linear-gradient(90deg, red, yellow)</div>
-<div id="grad6" class="line">linear-gradient(180deg, red, yellow)</div>
-<div id="grad7" class="line">linear-gradient(-90deg, red, yellow)</div>
-<div id="grad8" class="line">linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); Rainbow Background</div>
-<div id="grad9" class="line">radial-gradient(red, yellow, green)</div>
-<div id="grad10" class="line">radial-gradient(red 5%, yellow 15%, green 60%)</div>
-<div id="grad11" class="line">radial-gradient(circle, red, yellow, green)</div>
-<div id="grad12" class="line">repeating-linear-gradient(red, yellow 10%, green 20%)</div>
-<div id="grad13" class="line">repeating-linear-gradient(45deg,red,yellow 7%,green 10%)</div>
-<div id="grad14" class="line">repeating-linear-gradient(190deg,red,yellow 7%,green 10%)</div>
-<div id="grad15" class="line">repeating-linear-gradient(90deg,red,yellow 7%,green 10%)</div>
-<div id="grad16" class="line">repeating-radial-gradient(red, yellow 10%, green 15%);</div>
+<br><hr><br>
+	<h3>CSS Gradients</h4>
+<div id="grad1" class="line">Linear Gradient - Top to Bottom</div><hr>
+<div id="grad2" class="line">Linear Gradient - Left to Right</div><hr>
+<div id="grad3" class="line">Linear Gradient - Diagonal(top left to bottom right)</div><hr>
+<div id="grad4" class="line">linear-gradient(0deg, red, yellow)</div><hr>
+<div id="grad5" class="line">linear-gradient(90deg, red, yellow)</div><hr>
+<div id="grad6" class="line">linear-gradient(180deg, red, yellow)</div><hr>
+<div id="grad7" class="line">linear-gradient(-90deg, red, yellow)</div><hr>
+<div id="grad8" class="line">linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); Rainbow Background</div><hr>
+<div id="grad9" class="line">radial-gradient(red, yellow, green)</div><hr>
+<div id="grad10" class="line">radial-gradient(red 5%, yellow 15%, green 60%)</div><hr>
+<div id="grad11" class="line">radial-gradient(circle, red, yellow, green)</div><hr>
+<div id="grad12" class="line">repeating-linear-gradient(red, yellow 10%, green 20%)</div><hr>
+<div id="grad13" class="line">repeating-linear-gradient(45deg,red,yellow 7%,green 10%)</div><hr>
+<div id="grad14" class="line">repeating-linear-gradient(190deg,red,yellow 7%,green 10%)</div><hr>
+<div id="grad15" class="line">repeating-linear-gradient(90deg,red,yellow 7%,green 10%)</div><hr>
+<div id="grad16" class="line">repeating-radial-gradient(red, yellow 10%, green 15%);</div><hr>
 <hr><br>
 <p>The CSS background-origin property specifies where the background image is positioned.
 <br><br>
@@ -155,7 +201,7 @@ The property takes three different values:
 <div id="example33">
   <h2>Hello World</h2>
   <p>Both background images starts from the upper left corner of the content.</p>
-</div>
+</div><hr>
 <br>
 <a href="https://www.w3schools.com/cssref/pr_background-position.asp">BACKGROUND POSITION</a><br>
 	<h4>Background Size</h4>
@@ -207,7 +253,7 @@ The size can be specified in lengths, percentages, or by using one of the two ke
 <p>Here, the background-image is repeated and squished or stretched, to fill the space (no gaps):</p>
 <div id="example333">
   <h3>Hello World!</h3>
-</div>
+</div><hr><br>
 	<h4>Borders</h4>
 	<p>The CSS border properties allow you to specify the style, width, and color of an element's border.</p>
 <p style="font-weight: bolder;">Border</p>
@@ -228,9 +274,17 @@ The size can be specified in lengths, percentages, or by using one of the two ke
 <p class="normal">Normal border</p>
 <p class="round1">Round border</p>
 <p class="round2">Rounder border</p>
-<p class="round3">Roundest border</p><hr>
+<p class="round3">Roundest border</p><hr><br>
+	<h3>MARGIN</h3>
 <p>The CSS margin properties are used to create space around elements, outside of any defined borders.</p>
-<div id="div1">
+<p>All the margin properties can have the following values:
+<br><br>
+    auto - the browser calculates the margin<br>
+    length - specifies a margin in px, pt, cm, etc.<br>
+    % - specifies a margin in % of the width of the containing element<br>
+    inherit - specifies that the margin should be inherited from the parent element<br>
+	</p>
+	<div id="div1">
 <p class="ex1">This paragraph has an inherited left margin (from the div element).</p>
 </div>
 <div id="div11">
@@ -240,9 +294,18 @@ The size can be specified in lengths, percentages, or by using one of the two ke
 <p>In this example the h1 element has a bottom margin of 50px and the h2 element has a top margin of 20px. So, the vertical margin between h1 and h2 should have been 70px (50px + 20px). However, due to margin collapse, the actual margin ends up being 50px.</p>
 <h1 id="h11">Heading 1</h1>
 <h2 id="h22">Heading 2</h2>
+	<div style="margin: auto; width:300px; border:1px solid red;">
+This div will be horizontally centered because it has margin: auto;
+</div><hr><br>
 <h2>PADDING</h2>
 <p>The CSS padding properties are used to generate space around an element's content, inside of any defined borders.</p>
-<div id="div33">This div element has a top padding of 50px, a right padding of 30px, a bottom padding of 50px, and a left padding of 80px.</div>
+<p>All the padding properties can have the following values:
+<br><br>
+    length - specifies a padding in px, pt, cm, etc.<br>
+    % - specifies a padding in % of the width of the containing element<br>
+    inherit - specifies that the padding should be inherited from the parent element<br>
+	</p>
+	<div id="div33">This div element has a top padding of 50px, a right padding of 30px, a bottom padding of 50px, and a left padding of 80px.</div>
 <h2>Padding and element width</h2>
 <p>So, if an element has a specified width, the padding added to that element will be added to the total width of the element. This is often an undesirable result.</p>
 
@@ -252,19 +315,28 @@ The size can be specified in lengths, percentages, or by using one of the two ke
 <div class="ex2">The width of this div is 350px, even though it is defined as 300px in the CSS.</div>
 <p>To keep the width at 300px, no matter the amount of padding, you can use the box-sizing property. This causes the element to maintain its width; if you increase the padding, the available content space will decrease.</p>
 <h2>Padding and element width - with box-sizing</h2>
-
+<p>If the padding property has four values:
+<br><br>
+    padding: 25px 50px 75px 100px;<br>
+        top padding is 25px<br>
+        right padding is 50px<br>
+        bottom padding is 75px<br>
+        left padding is 100px<br>
+	</p>
 <div class="ex11">This div is 300px wide.</div>
 <br>
 
 <div class="ex21">The width of this div remains at 300px, in spite of the 50px of total left and right padding, because of the box-sizing: border-box property.
-</div>
+</div><hr><br>
 <p style="font-weight: bolder;">CSS Height and Width</p>
 <div id="div444">This div element has a height of 200px and a width of 50%.</div><br>
 <div id="div4441">This div element has a height of 100px and a width of 500px.</div><br>
 <div id="div4442">This div element has a height of 100px and a max-width of 500px.</div><br>
 <div id="div4443">This is some text. This is some text. This is some text.
 This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.</div>
+This is some text. This is some text. This is some text.</div><hr><br>
+	<h3>OutLine</h3>
+	<p>An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out".</p>
 <p style="font-weight: bolder;">An outline is a line drawn outside the element's border.</p>
 <p id="outp">This element has a 2px black border and a green outline with a width of 10px.</p>
 <p id="outex1">A 4px thick outline</p>
@@ -272,13 +344,24 @@ This is some text. This is some text. This is some text.</div>
 <p class="outex2">A Think ridge Pink Outline</p>
 <p style="font-weight: bolder;">The outline-offset property adds space between an outline and the edge/border of an element. The space between an element and its outline is transparent.</p>
 <p class="outex3">This paragraph has an outline 15px outside the border edge.</p>
-<p>Text Align :<br>
+<p>CSS has the following outline properties:
+<br><br>
+    outline-style<br>
+    outline-color<br>
+    outline-width<br>
+    outline-offset<br>
+    outline<br>
+	</p><hr><br>
+	<p>Text Align :<br>
 the text-align property is set to "justify", each line is stretched so that every line has equal width, and the left and right margins are straight
 </p>
+	<p>The text-decoration property is used to set or remove decorations from text.</p>
 <h1 id="h111">HEADING</h1>
 <h2 id="h222">HEADING</h2>
 <h3 id="h333">This is HEADING text</h3>
-<div id="txtali">In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'</div>
+<p>When the text-align property is set to "justify", each line is stretched so that every line has equal width, and the left and right margins are straight (like in magazines and newspapers):</p>
+	<div id="txtali">In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'</div>
+	<hr><br>
 <p>TEXT DIRECTION :</p>
 <p class="txtdir">This is right-to-left text direction.</p>
 <h2>vertical-align: baseline (default):</h2>
@@ -295,12 +378,13 @@ the text-align property is set to "justify", each line is stretched so that ever
 
 <h2>vertical-align: sup:</h2>
 <p>An <img class="e" src="sqpurple.gif" width="9" height="9"> image with a super alignment.</p>
-<p>The text-transform property is used to specify uppercase and lowercase letters in a text.</p>
+	<h4>Text Transform</h4>
+	<p class="uppercase">The text-transform property</p><p class="lowercase"> is used to specify uppercase</p><p class="capitalize"> and lowercase letters in a text.</p>
 <p>The text-decoration property is used to set or remove decorations from text.</p>
-<p>The text-indent property is used to specify the indentation of the first line of a text.(starting point of text)
-</p>
-<p id="txtind">In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
-<h1 id="ls1">This is Heading 1</h1>
+<p>The text-indent property is used to specify the indentation of the first line of a text.(starting point of text)</p>
+<p id="txtind">Text Indent In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+	<h4>Letter Spacing</h4>
+	<h1 id="ls1">This is Heading 1</h1>
 <h2 id="ls2">This is Heading 2</h2>
 <p>Line Spacing :</p>
 <p class="small">
@@ -332,6 +416,7 @@ This is some text. This is some text.</p>
 In its simplest use, you only specify the horizontal shadow (2px) and the vertical shadow (2px)</p><p>Then, add a blur effect (5px) to the shadow</p>
 
 <p id="tse">Text Shadow Effect!</p>
+	<h1 style="color: white; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;">Text-shadow effect!</h1>
 <p>In CSS there are five generic font families:
 <br>
 Serif - fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance.<br>
@@ -377,17 +462,26 @@ Garamond (serif)<br>
 Courier New (monospace)<br>
 Brush Script MT (cursive)</p>
 
-<p><b></b>Font Style :</b><br>
-	This property has three values:<br>
+	<h4><b>Font Style :</b></h4><br>
+	<p>This property has three values:<br>
 normal - The text is shown normally<br>
 italic - The text is shown in italics<br>
 oblique - The text is "leaning"</p>
+	<p class="normal">This is a paragraph in normal style.</p>
+<p class="italic">This is a paragraph in italic style.</p>
+<p class="oblique">This is a paragraph in oblique style.</p>
 <p><b>Font Weight :</b><br>
 The font-weight property specifies the weight of a font.</p>
+	<p class="normal1">This is a paragraph.</p>
+<p class="light">This is a paragraph.</p>
+<p class="thick">This is a paragraph.</p>
+<p class="thicker">This is a paragraph.</p>
 <p><b>Font Variant :</b><br>
 	The font-variant property specifies whether or not a text should be displayed in a small-caps font.<br>
 In a small-caps font, all lowercase letters are converted to uppercase letters. However, the converted uppercase letters appears in a smaller font size than the original uppercase letters in the text.
 </p>
+	<p class="normal111">My name is Hege Refsnes.</p>
+<p class="small">My name is Hege Refsnes.</p>
 <p><b>Font Size :</b><br>
 Font Size With Pixels
 </p>
@@ -506,7 +600,20 @@ One font should be the boss. This establishes a hierarchy for the fonts on your 
 </div>
 
 <h3>ICONS</h3>
+	<p>Icons can easily be added to your HTML page, by using an icon library.</p>
+	<p>How To Add Icons<br><br>
+
+The simplest way to add an icon to your HTML page, is with an icon library, such as Font Awesome.
+<br>
+Add the name of the specified icon class to any inline HTML element (like < i> or < span>).
+<br>
+All the icons in the icon libraries below, are scalable vectors that can be customized with CSS (size, color, shadow, etc.)</p>
 <p style="font-weight: bolder;">Font Awesome Icons</p>
+		<p>Font Awesome Icons
+<br><br>
+To use the Font Awesome icons, go to fontawesome.com, sign in, and get a code to add in the <head> section of your HTML page:
+<br>
+< script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></ script></p>
 <i class="fas fa-cloud"></i>
 <i class="fas fa-heart"></i>
 <i class="fas fa-car"></i>
@@ -514,6 +621,9 @@ One font should be the boss. This establishes a hierarchy for the fonts on your 
 <i class="fas fa-bars"></i>
 <br>
 <p style="font-weight: bolder;">Bootstrap Icons</p>
+	<p>To use the Bootstrap glyphicons, add the following line inside the <head> section of your HTML page:
+<br><br>
+<  link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></p>
 <i class="glyphicon glyphicon-cloud"></i>
 <i class="glyphicon glyphicon-remove"></i>
 <i class="glyphicon glyphicon-user"></i>
@@ -521,6 +631,9 @@ One font should be the boss. This establishes a hierarchy for the fonts on your 
 <i class="glyphicon glyphicon-thumbs-up"></i>
 <br>
 <p style="font-weight: bolder;">Google Icons</p>
+	<p>To use the Google icons, add the following line inside the <head> section of your HTML page:
+<br><br>
+< link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></p>
 <i class="material-icons">cloud</i>
 <i class="material-icons">favorite</i>
 <i class="material-icons">attachment</i>
@@ -529,6 +642,13 @@ One font should be the boss. This establishes a hierarchy for the fonts on your 
 <br>
 
 <p>CSS LINKS</p>
+	<p>The four links states are:
+<br><br>
+    a:link - a normal, unvisited link<br>
+    a:visited - a link the user has visited<br>
+    a:hover - a link when the user mouses over it<br>
+    a:active - a link the moment it is clicked<br>
+</p>
 <a href="https://www.w3schools.com/default.asp" class="l1">W3Schools color</a><br><br>
 <a href="https://www.w3schools.com/default.asp" class="l2">W3Schools size</a><br>
 <a href="https://www.w3schools.com/default.asp" class="l3">W3Schools BG color</a><br>
@@ -557,23 +677,28 @@ One font should be the boss. This establishes a hierarchy for the fonts on your 
 
 <h3>LISTS STYLES</h3>
 <p>List using IMAGE</p>
+	<p>The list-style-image property specifies an image as the list item marker:</p>
 <ul class="ul1">
   <li>Coffee</li>
   <li>Tea</li>
   <li>Coca Cola</li>
 </ul>
 <h2>list-style-position: outside (default):</h2>
+	<p>"list-style-position: outside;" means that the bullet points will be outside the list item. The start of each line of a list item will be aligned vertically. This is default</p>
 <ul class="a">
   <li>Tea - An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub (bush) native to Asia</li>
   <li>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its original ingredients, which were kola nuts (a source of caffeine) and coca leaves</li>
 </ul>
 
 <h2>list-style-position: inside:</h2>
+	
+	<p>"list-style-position: inside;" means that the bullet points will be inside the list item. As it is part of the list item, it will be part of the text and push the text at the start</p>
 <ul class="b">
   <li>Tea - An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub (bush) native to Asia</li>
   <li>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its original ingredients, which were kola nuts (a source of caffeine) and coca leaves</li>
 </ul>
 <p>Remove bullets, margin and padding:</p>
+	<p>The list-style-type:none property can also be used to remove the markers/bullets. Note that the list also has default margin and padding. To remove this, add margin:0 and padding:0 to < ul> or < ol>:</p>
 <ul class="demo">
   <li>Coffee</li>
   <li>Tea</li>
@@ -599,6 +724,27 @@ list-style-image <br>
   <li>Coca Cola</li>
 </ul>
 <h3>TABLES</h3>
+	<p>Double Borders Remove
+<br><br>
+Notice that the table in the examples above have double borders. This is because both the table and the < th> and < td> elements have separate borders.
+<br>
+To remove double borders,The border-collapse property sets whether the table borders should be collapsed into a single border<br>
+border-collapse: collapse;</p>
+	<p>CSS Table Alignment<br>
+	Horizontal Alignment<br><br>
+		The text-align property sets the horizontal alignment (like left, right, or center) of the content in < th> or < td>.
+<br>
+By default, the content of < th> elements are center-aligned and the content of < td> elements are left-aligned.<br><br>
+	Vertical Alignment<br><br>
+
+The vertical-align property sets the vertical alignment (like top, bottom, or middle) of the content in < th> or < td>.<br>
+
+By default, the vertical alignment of the content in a table is middle (for both < th> and < td> elements).<br><br>
+	Responsive Table<br><br>
+
+A responsive table will display a horizontal scroll bar if the screen is too small to display the full content:<br>
+	Add a container element (like <div>) with overflow-x:auto around the <table> element to make it responsive:
+	</p>
 <table>
     <thead>
       <th>Good Morning</th>
