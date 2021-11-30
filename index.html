@@ -16,13 +16,13 @@
 <p id="p1">Selectors</p>
 	<p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
 	<p>We can divide CSS selectors into five categories:</p>
-	<ul>
+	<ol>
 		<li>Simple selectors (select elements based on name, id, class)</li>
 		<li><a href="https://www.w3schools.com/css/css_combinators.asp">Combinator selectors</a> (select elements based on a specific relationship between them)</li>
 		<li><a href="https://www.w3schools.com/css/css_pseudo_classes.asp">Pseudo-class selectors</a> (select elements based on a certain state)</li>
 		<li><a href="https://www.w3schools.com/css/css_pseudo_elements.asp">Pseudo-elements selectors</a> (select and style a part of an element)</li>
 		<li><a href="https://www.w3schools.com/css/css_attribute_selectors.asp">Attribute selectors</a> (select elements based on an attribute or attribute value)</li>
-	</ul>
+	</ol>
 <img src="IMAGES/selectors.png" id="img1"><hr><br>
 <p id="p2">Comments</p>
 <p>/*&emsp;------------<br>
@@ -68,7 +68,7 @@ background-position</p><hr><br>
 	<h6>Transparency using RGBA</h6>
 	<code>div {
   		background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity */
-		}<code><hr><br>
+		}</code><hr><br>
 <h4>CSS Background Image</h4>
 <p>The background-image property specifies an image to use as the background of an element.<br>
 By default, the image is repeated so it covers the entire element.</p>
@@ -91,7 +91,12 @@ By default, the image is repeated so it covers the entire element.</p>
 <h1>The background-clip Property</h1>
 
 <p>The background-clip property defines how far the background should extend within an element.</p>
-
+<p>The property takes three different values:
+<br><br>
+    border-box - (default) the background is painted to the outside edge of the border<br>
+    padding-box - the background is painted to the outside edge of the padding<br>
+    content-box - the background is painted within the content box<br>
+	</p>
 <p>background-clip: border-box (this is default):</p>
 <div id="example1">
   <p>The background extends behind the border.</p>
@@ -118,12 +123,20 @@ By default, the image is repeated so it covers the entire element.</p>
 <div id="grad9" class="line">radial-gradient(red, yellow, green)</div>
 <div id="grad10" class="line">radial-gradient(red 5%, yellow 15%, green 60%)</div>
 <div id="grad11" class="line">radial-gradient(circle, red, yellow, green)</div>
-<div id="grad12" class="line"></div>
-<div id="grad13" class="line"></div>
-<div id="grad14" class="line"></div>
-<div id="grad15" class="line"></div>
-<div id="grad16" class="line"></div>
+<div id="grad12" class="line">repeating-linear-gradient(red, yellow 10%, green 20%)</div>
+<div id="grad13" class="line">repeating-linear-gradient(45deg,red,yellow 7%,green 10%)</div>
+<div id="grad14" class="line">repeating-linear-gradient(190deg,red,yellow 7%,green 10%)</div>
+<div id="grad15" class="line">repeating-linear-gradient(90deg,red,yellow 7%,green 10%)</div>
+<div id="grad16" class="line">repeating-radial-gradient(red, yellow 10%, green 15%);</div>
 <hr><br>
+<p>The CSS background-origin property specifies where the background image is positioned.
+<br><br>
+The property takes three different values:
+<br><br>
+    border-box - the background image starts from the upper left corner of the border<br>
+    padding-box - (default) the background image starts from the upper left corner of the padding edge<br>
+    content-box - the background image starts from the upper left corner of the content<br>
+</p>
 <h2>background-origin: content-box, padding-box:</h2>
 <div id="example11">
   <h2>Hello World</h2>
@@ -145,6 +158,10 @@ By default, the image is repeated so it covers the entire element.</p>
 </div>
 <br>
 <a href="https://www.w3schools.com/cssref/pr_background-position.asp">BACKGROUND POSITION</a><br>
+	<h4>Background Size</h4>
+	<p>The CSS background-size property allows you to specify the size of background images.<br>
+
+The size can be specified in lengths, percentages, or by using one of the two keywords: contain or cover.</p>
 <h2>background-size: auto (default):</h2>
 <div id="example111">
   <h2>Hello World</h2>
@@ -181,6 +198,7 @@ By default, the image is repeated so it covers the entire element.</p>
 
 <h2>background-repeat: space</h2>
 <p>Here, the background-image is repeated as much as possible without clipping. The first and last images are pinned to either side of the element, and whitespace is distributed evenly between the images.</p>
+	<p>By default, the background-image property repeats an image both horizontally and vertically.</p>
 <div id="example2222">
   <h3>Hello World!</h3>
 </div>
@@ -190,6 +208,8 @@ By default, the image is repeated so it covers the entire element.</p>
 <div id="example333">
   <h3>Hello World!</h3>
 </div>
+	<h4>Borders</h4>
+	<p>The CSS border properties allow you to specify the style, width, and color of an element's border.</p>
 <p style="font-weight: bolder;">Border</p>
 <p class="dotted">A dotted border.</p>
 <p class="dashed">A dashed border.</p>
