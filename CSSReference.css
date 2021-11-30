@@ -678,14 +678,14 @@ div.relative{
   border: 3px solid #73AD21;
   width: 300px;
 }
-div.fixed {
+/*div.fixed {
   position: fixed;
   top: 0;
   right: 0;
   width: 300px;
   border: 3px solid #73AD21;
   z-index: 1;
-}
+}*/
 div.relative1 {
   position: relative;
   width: 400px;
@@ -709,12 +709,12 @@ div.sticky {
   background-color: #cae8ca;
   border: 2px solid #4CAF50;
 }
-.ovrlap {
+/*.ovrlap {
   position: absolute;
   left: 0px;
   bottom: 0px;
   z-index: -1;
-}
+}*/
 .container {
   position: relative;
 }
@@ -923,12 +923,6 @@ span.c {
   padding: 5px;
   border: 1px solid blue;    
   background-color: yellow; 
-}
-.center {
-  margin: auto;
-  width: 60%;
-  border: 3px solid #73AD21;
-  padding: 10px;
 }
 .cente {
   margin: auto;
