@@ -66,8 +66,7 @@ p.small {
 		<li><a href="https://www.w3schools.com/css/css_combinators.asp">Combinator selectors</a> (select elements based on a specific relationship between them)</li>
 		<li><a href="https://www.w3schools.com/css/css_pseudo_classes.asp">Pseudo-class selectors</a> (select elements based on a certain state)</li>
 		<li><a href="https://www.w3schools.com/css/css_pseudo_elements.asp">Pseudo-elements selectors</a> (select and style a part of an element)</li>
-		<li><a href="https://www.w3schools.com/css/css_attribute_selectors.asp">Attribute selectors</a> (select elements based on an attribute or attribute value)</li>
-	</ol>
+		<li><a href="https://www.w3schools.com/css/css_attribute_selectors.asp">Attribute selectors</a> (select elements based on an attribute or attribute value)</li></ol>
 <img src="IMAGES/selectors.png" id="img1"><hr><br>
 <p id="p2">Comments</p>
 <p>/*&emsp;------------<br>
@@ -678,32 +677,39 @@ To use the Font Awesome icons, go to fontawesome.com, sign in, and get a code to
 <h3>LISTS STYLES</h3>
 <p>List using IMAGE</p>
 	<p>The list-style-image property specifies an image as the list item marker:</p>
+<div>
 <ul class="ul1">
   <li>Coffee</li>
   <li>Tea</li>
   <li>Coca Cola</li>
 </ul>
+</div>
 <h2>list-style-position: outside (default):</h2>
 	<p>"list-style-position: outside;" means that the bullet points will be outside the list item. The start of each line of a list item will be aligned vertically. This is default</p>
+<div>
 <ul class="a">
   <li>Tea - An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub (bush) native to Asia</li>
   <li>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its original ingredients, which were kola nuts (a source of caffeine) and coca leaves</li>
 </ul>
-
+</div>
 <h2>list-style-position: inside:</h2>
 	
 	<p>"list-style-position: inside;" means that the bullet points will be inside the list item. As it is part of the list item, it will be part of the text and push the text at the start</p>
+<div>
 <ul class="b">
   <li>Tea - An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub (bush) native to Asia</li>
   <li>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its original ingredients, which were kola nuts (a source of caffeine) and coca leaves</li>
 </ul>
+</div>
 <p>Remove bullets, margin and padding:</p>
 	<p>The list-style-type:none property can also be used to remove the markers/bullets. Note that the list also has default margin and padding. To remove this, add margin:0 and padding:0 to < ul> or < ol>:</p>
+<div>
 <ul class="demo">
   <li>Coffee</li>
   <li>Tea</li>
   <li>Coca Cola</li>
 </ul>
+</div>
 <br>
 <p style="font-weight: bolder;">List - Shorthand property<br>
   the order of the property values are:<br>
@@ -712,17 +718,20 @@ list-style-position <br>
 list-style-image <br>
 </p>
 <h3>Styling Lists With Colors:</h3>
+<div>
 <ol class="ols">
   <li>Coffee</li>
   <li>Tea</li>
   <li>Coca Cola</li>
 </ol>
-
+</div>
+<div>
 <ul class="uls">
   <li>Coffee</li>
   <li>Tea</li>
   <li>Coca Cola</li>
 </ul>
+</div><hr><br>
 <h3>TABLES</h3>
 	<p>Double Borders Remove
 <br><br>
@@ -763,12 +772,17 @@ A responsive table will display a horizontal scroll bar if the screen is too sma
   </table><br><br>
 <p style="font-weight: bolder;">The display property is the most important CSS property for controlling layout.<br>
 Override The Default Display Value</p>
-
+<div>
 <ul id="dis">
   <li>HTML </li>
   <li> CSS </li>
   <li> Javascript</li>
 </ul>
+</div>	<hr><br>			 
+
+<h3>Dispaly Property</h3>
+<img src="displayproperty.jpg" height="950px">
+				 
 <div id="dis1">
 <span>A display property</span><span> with a value of</span><span> "block" results in</span> <span>a line break</span><span> between the two elements.</span>
 </div>
@@ -786,13 +800,11 @@ However, the element will still take up the same space as before. The element wi
 <h1>This is a visible heading</h1>
 <h1 class="hidd1">This is a hidden heading</h1>
 <p>Notice that the h1 element with display: none; does not take up any space.</p>
-
-<h3>Dispaly Property</h3>
-<img src="displayproperty.jpg" height="950px">
+<hr><br>
 
 
 <h2>CSS Max-width</h2>
-<p>Using max-width instead, in this situation, will improve the browser's handling of small windows. This is important when making a site usable on small devices:</p>
+<p>Using max-width instead, in this situation, will improve the browsers handling of small windows. This is important when making a site usable on small devices:</p>
 
 <div class="example1">This div element has width: 500px;</div>
 <br>
@@ -800,7 +812,7 @@ However, the element will still take up the same space as before. The element wi
 <div class="example2">This div element has max-width: 500px;</div>
 
 <p><strong>Tip:</strong> Drag the browser window to smaller than 500px wide, to see the difference between 
-the two divs!</p>
+the two divs!</p><hr><br>
 
 <h2>Position Property</h2>
 <p>The position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky).</p>
@@ -845,7 +857,17 @@ A sticky element toggles between relative and fixed, depending on the scroll pos
 
 <p>Try to <b>scroll</b> inside this frame to understand how sticky positioning works.</p>
 
-<div class="sticky">I am sticky!</div>
+<div class="sticky">I am sticky!</div><hr><br>
+
+<h1>Positioning Text In an Image</h1>
+<div class="container">
+  <img src="img_5terre_wide.jpg" alt="Cinque Terre" width="1000" height="300" id="position">
+  <div class="topleft">Top Left</div>
+  <div class="topright">Top Right</div>
+  <div class="center">Centered</div>
+  <div class="bottomleft">Bottom Left</div>
+  <div class="bottomright">Bottom Right</div>
+</div><hr><br>
 
 <h3>Overlapping Elements</h3>
 <p>When elements are positioned, they can overlap other elements.
@@ -857,23 +879,16 @@ An element can have a positive or negative stack order:</p>
 <h1>This is a heading<br>GO TO TOP OF THE PAGE</h1>
 <img src="w3css.gif" width="100px" height="140px" class="ovrlap">
 <p>Because the image has a z-index of -1, it will be placed behind the text.</p>
-<h1>Positioning Text In an Image</h1>
-<div class="container">
-  <img src="img_5terre_wide.jpg" alt="Cinque Terre" width="1000" height="300" id="position">
-  <div class="topleft">Top Left</div>
-  <div class="topright">Top Right</div>
-  <div class="center">Centered</div>
-  <div class="bottomleft">Bottom Left</div>
-  <div class="bottomright">Bottom Right</div>
-</div>
+<hr><br>
+	
 <h3>The Bottom Property</h3>
 <a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss_position_bottom">Bottom Property</a>
 <p>The bottom property affects the vertical position of a positioned element. This property has no effect on non-positioned elements.
 <br>
 If position: absolute; or position: fixed; - the bottom property sets the bottom edge of an element to a unit above/below the bottom edge of its nearest positioned ancestor.<br>
-If position: relative; - the bottom property makes the element's bottom edge to move above/below its normal position.<br>
+If position: relative; - the bottom property makes the element s bottom edge to move above/below its normal position.<br>
 If position: sticky; - the bottom property behaves like its position is relative when the element is inside the viewport, and like its position is fixed when it is outside.<br>
-If position: static; - the bottom property has no effect.</p>
+If position: static; - the bottom property has no effect.</p><hr><br>
 <h3>clip Property</h3>
 
 <p>What happens if an image is larger than its containing element?
@@ -883,7 +898,7 @@ The clip property lets you specify a rectangle to clip an absolutely positioned 
 Note: The clip property does not work if "overflow:visible".</p>
 <div>
 <img src="w3css.gif" width="100" height="140" id="clipp"></div>
-<br><br><br><br><br><br>
+<br><br><br><br><br><br><hr><br>
 <h2>The Left Property</h2>
 <p>The left property affects the horizontal position of a positioned element. This property has no effect on non-positioned elements.
 <br>
@@ -895,6 +910,14 @@ If position: static; - the left property has no effect.</p>
 <a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss_position2">Position Property</a><hr>
 <a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss_position_right2">Right Property</a><hr>
 <a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss_position_top2">Top Property</a><hr>
+<h3>Z-Index Property</h3>
+	<p>The z-index property specifies the stack order of an element.
+<br><br>
+An element with greater stack order is always in front of an element with a lower stack order.
+<br><br>
+Note: z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and flex items (elements that are direct children of display:flex elements).
+<br><br>
+Note: If two positioned elements overlap without a z-index specified, the element positioned last in the HTML code will be shown on top.</p>
 <div style="position:absolute">
     <div id="myBox" style="border:1px solid #333333;width:100px;height:100px;">myBox</div>
     <div style="width:100px;height:100px;position:absolute;background-color:yellow;top:20px;left:20px;z-index:0;opacity:0.5;border:1px solid #333333;">z-index 0</div>
@@ -918,7 +941,7 @@ If position: static; - the left property has no effect.</p>
 <div id="overflowhid">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div><br>
 <div id="overflowscr">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div><br>
 <div id="overflowauto">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div><br>
-<div id="overflowXY">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div><br>
+<div id="overflowXY">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div><br><hr><br>
 <p style="font-weight: bolder;">Float Property</p>
 <p>The CSS float property specifies how an element should float.</p>
 
@@ -930,7 +953,7 @@ If position: static; - the left property has no effect.</p>
 <div class="div1" id="d4">Div 4</div>
 <div class="div1" id="d5">Div 5</div>
 <div class="div1" id="d6">Div 6</div>
-<br><br>
+<br><br><hr><br>
 <h3>Clear and Clearfix Property</h3>
 <p></p>
 <h2>Without clear</h2>
@@ -950,7 +973,7 @@ If position: static; - the left property has no effect.</p>
   <img class="img2" src="pineapple.jpg" alt="Pineapple" width="170" height="170" id="cfimg">
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
 </div>
-
+<hr><br>
 <h2>Float Examples</h2>
 
 <div class="clearfix">
@@ -1021,22 +1044,31 @@ Another method for aligning elements is to use the float property:</p>
 <div class="right2">
   <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
 </div>
-<br><br><br><br><br>
+<br><br><br><br><br><hr>
+<h4>Center Vertically - Using padding</h4>
 <div class="center1">
   <p>I am vertically centered.</p>
-</div>
-
+</div><hr><br>
+<h4>To center both vertically and horizontally, use padding and text-align: center:</h4>
 <div class="center2">
   <p>I am vertically and horizontally centered.</p>
-</div>
-
+</div><hr><br>
+<h4>Center Vertically - Using line-height</h4>
 <div class="center3">
   <p>I am vertically and horizontally centered.</p>
-</div>
-
+</div><hr><br>
+<h4>Center Vertically - Using position & transform</h4>
 <div class="center4">
   <p>I am vertically and horizontally centered.</p>
-</div>
+</div><hr><br>
+<h4>Center Vertically - Using Flexbox</h4>
+<div style="display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 3px solid green; ">
+  <p>I am vertically and horizontally centered.</p>
+</div><hr><br>
 <h1>Combinators</h1>
 <p>A combinator is something that explains the relationship between the selectors.<br>
 There are four different combinators in CSS:
@@ -1087,7 +1119,7 @@ general sibling selector (~)</p>
 <code>Some code.</code>
 <p>Paragraph 4.</p>
 </div>
-
+<hr><br>
 <h2>Pseudo Classes</h2>
 <p>A pseudo-class is used to define a special state of an element.<br>
 
@@ -1127,7 +1159,7 @@ the selector matches all < i> elements in < p> elements that are the first child
 </div>
 <p class="bold1"> The :lang Pseudo-class</p>
 <p class="psclang">Some text <q lang="no">A quote in a paragraph</q> Some text.</p>
-<br><br>
+<br><br><hr><br>
 <p class="bold1">ALL PSEUDO CLASSES</p>
 <p class="bold1">Checked selector</p>
 <div class="checked">
@@ -1179,14 +1211,14 @@ The :first-of-type selector matches every element that is the first child, of a 
   <li>Third</li>
 </ol>
 
-
+<hr><br>
 <p class="bold1">Opacity</p>
 <div class="background">
   <div class="transbox">
     <p>This is some text that is placed in the transparent box.</p>
   </div>
 </div>
-
+<hr><br>
 <p class="bold1">Navigation Bar</p>
 <p>vertical Navigaton Bar</p>
 <div class="vnavb">
@@ -1248,7 +1280,7 @@ The :first-of-type selector matches every element that is the first child, of a 
   <p>Some text some text some text some text..</p>
 </div>
 </div>
-<hr>
+<hr><br>
 <p class="bold1">DROPDOWN MENU</p>
 <div class="dropdown" style="float:left;">
   <button class="dropbtn">Left</button>
@@ -1311,7 +1343,7 @@ Using image sprites will reduce the number of server requests and save bandwidth
 
   </form>
 </div>
-<br>
+<br><hr><br>
 <h3>Counters</h3>
 <p>CSS counters are "variables" maintained by CSS whose values can be incremented by CSS rules (to track how many times they are used).<br>Counters let you adjust the appearance of content based on its placement in the document.<br><br>
 To work with CSS counters we will use the following properties:
@@ -1366,7 +1398,7 @@ To work with CSS counters we will use the following properties:
   <li>item</li>
   <li>item</li>
 </ol>
-
+<hr><br>
 <h3>WEBSITE lAYOUT</h3>
 <p>A website is often divided into headers, menus, content and a footer</p>
 <p class="bold1">HEADER</p>
@@ -1448,8 +1480,8 @@ To work with CSS counters we will use the following properties:
 <div class="footer">
   <p>Footer</p>
 </div>
-<br>
-
+<br><hr><br>
+<h3>CSS Units</h3>
 <p class="bold1">Length Units</p>
 <p>There are two types of length units: <b>absolute</b> and <b>relative</b>.</p>
 <p class="bold1">Absolute Lengths</p>
@@ -1478,7 +1510,7 @@ To work with CSS counters we will use the following properties:
 <h2 class="pc">3pc</h2>
 <p class="pc">1.5pc</p>
 <br><br>
-
+<hr><br>
 <p class="bold1">Relative Lengths</p>
 <img src="rellen.jpg" height="350px">
 
