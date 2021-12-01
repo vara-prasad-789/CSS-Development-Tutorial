@@ -1313,10 +1313,10 @@ div.transbox p {
   resize: none;
 }
 
-body {
+/*body {
   counter-reset: section;
   counter-reset: section1;
-}
+}*/
 
 .count::before {
   counter-increment: section;
